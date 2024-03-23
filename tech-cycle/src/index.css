@@ -1,0 +1,187 @@
+:root{
+  --light-sec-color: #2a7e3a;
+  --dark-sec-color: #11431b;
+  --white: white;
+}
+
+body{
+box-sizing: border-box;  
+margin: 0px; 
+padding: 0px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+scroll-behavior: smooth;
+overflow-x: hidden;
+background-color: #f2fff4;
+}
+
+
+/* --------------------------------Landing Page Section--------------------------- */
+
+/* ------------------------------------------Navbar section------------------------------------ */
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
+
+.navbar ul li{
+ list-style-type: none;
+ display: inline-block;
+ margin: 0 32px;
+}
+.navbar ul li a{
+ text-decoration: none;
+ text-transform: uppercase;
+ color: var(--dark-sec-color);
+}
+.navbar ul li a:hover{
+ text-decoration:underline
+}
+.icon{
+  display: none;
+}
+
+/* ----------------------------------hero section----------------------------- */
+.hero-sec{
+  margin: 4px;
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('./pages/images/img.png');
+  background-position: center;
+  background-size: cover;
+  height: 72vh;
+}
+.hero-sec img{
+display: flex;
+margin: 0 auto;
+}
+.top-text{
+  position: absolute;
+  top: 10.1%;
+  color: var(--light-sec-color);
+  width: 30%;
+  background-color: var(--white);
+  text-transform: uppercase;
+}
+.bottom-text{
+  position: absolute;
+  right: 8px;
+  bottom: 18%;
+  font-size: larger;
+  text-transform: uppercase;
+  background-color: var(--white);
+  width: 30%;
+}
+.cta-text{
+  position: absolute;
+  bottom: 0%;
+  left: 26%;
+  text-transform: uppercase;
+
+}
+.cta-text span{
+  /* background-color: var(--light-sec-color); */
+  /* color: #fff; */
+}
+.button{
+  background-color: var(--light-sec-color);
+  color: var(--white);
+  display: flex;
+  margin: 8px auto;  
+  padding: 10px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+/* ----------------------device section---------------- */
+.dev-section{
+  margin: 10rem 0 4rem 0;
+  background-color: #f2fff4;
+  padding: 2rem;
+
+}
+.dev-section .row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;  
+}
+.dev-button{
+  background-color: var(--light-sec-color);
+  color: var(--white);
+  margin: 4px;
+  padding: 20px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+/* ---------------mechanism section--------------- */
+.mech-section{
+  text-align: center;
+  padding: 2rem;
+}
+.mech-section .row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.col{
+  flex-basis: 16%;
+  box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.1);;
+  margin: 8px;
+  padding: 16px;
+  background-color: var(--dark-sec-color);
+  color: var(--white);
+}
+.icons{
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+/* -----------------Subscribe Section------------------- */
+.subs{    
+  padding: 16px;    
+  width: 48%;
+  margin: 3rem auto;
+
+}
+
+.subs input{
+  padding: 12px 64px;
+}
+
+.subs input[placeholder]{
+  font-size: 14px;
+  line-height: 3px;
+}
+
+.subs button{
+  padding: 12px 24px;
+  background-color: var(--light-sec-color);
+  color: var(--white);
+  border: none;
+}
+
+
+/* ----------------------Footer section---------------- */
+.footer{
+  background-color: var(--dark-sec-color);    
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+.show{
+  display: block;
+}
+.footer-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer ul li{
+  list-style: none;
+  margin: 16px
+}
