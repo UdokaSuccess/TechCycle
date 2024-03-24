@@ -32,7 +32,7 @@ function Mechanism() {
       <div className='col'>
       <div className='icons'><TbTruckDelivery  size={88}/></div>
       <h4>Delivery</h4>
-      <p>Your device gets delivered to individuals who need them </p>
+      <p>Your device gets delivered to individuals and students who need them </p>
       </div>
       </div>
     </section>

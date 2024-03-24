@@ -3,10 +3,9 @@ import React from 'react'
 function Footer() {
   return (
     <footer className='footer'>
-    <h4 className='show'>Sign Up As a Recipient <a href='#'>here</a></h4>
+    {/* <h4 className='show'>Sign Up As a Recipient <a href='#'>here</a></h4> */}
     <div className='footer-text'>
-    <h4 className='hide'>Sign Up As a Recipient  <a href='#'>here</a></h4>
-         <ul>
+           <ul>
           <li>Contact</li>
           <li>Social</li> 
           <li>About</li> 
@@ -27,9 +26,10 @@ function Footer() {
           <li>Careers</li>
            <li>Connect</li>
          </ul>
+         <h4 className='hide'>Sign Up As a Recipient  <a href='#'>here</a></h4>
 </div>
 <hr></hr>
-        <p>Copywright &copy;  T-Cycle</p>
+        <p>Copywright &copy;  Tech Cycle</p>
   </footer>
   )
 }

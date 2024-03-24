@@ -17,7 +17,7 @@ function Navbar(props) {
         <Link to='/'><img src={img} width={48}/></Link>
         <ul className={`nav-list ${showNavbar && 'active'}`}>
         <li><Link to='/'>Home</Link></li>
-        <li><Link to='/about'>Donate</Link></li>
+        <li><Link to='/donate'>Donate</Link></li>
         <li><Link to='/about'>Recieve</Link></li>
 
         <li><Link to='/blog'>About</Link></li> 

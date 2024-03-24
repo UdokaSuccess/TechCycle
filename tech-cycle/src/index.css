@@ -2,16 +2,19 @@
   --light-sec-color: #2a7e3a;
   --dark-sec-color: #11431b;
   --white: white;
+  --font : 
+  
 }
-
 body{
 box-sizing: border-box;  
 margin: 0px; 
 padding: 0px;
 font-family: Georgia, 'Times New Roman', Times, serif;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 scroll-behavior: smooth;
 overflow-x: hidden;
-background-color: #f2fff4;
+/* background-color: #f2fff4; */
+
 }
 
 
@@ -44,17 +47,32 @@ background-color: #f2fff4;
 
 /* ----------------------------------hero section----------------------------- */
 .hero-sec{
-  margin: 4px;
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('./pages/images/img.png');
-  background-position: center;
-  background-size: cover;
-  height: 72vh;
+  /* background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ); */
+  background-color: #f2fff4;
+  height: 100vh;
+  margin-bottom: 4rem;
 }
-.hero-sec img{
+.hero-sec .row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center; 
+}
+.col1{
+  min-width: 320px;
+  margin-top: 80px;
+}
+
+.hero-sec p, .donors p{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+/* .hero-sec img{
 display: flex;
 margin: 0 auto;
-}
-.top-text{
+} */
+/* .top-text{
   position: absolute;
   top: 10.1%;
   color: var(--light-sec-color);
@@ -70,48 +88,52 @@ margin: 0 auto;
   text-transform: uppercase;
   background-color: var(--white);
   width: 30%;
-}
+} */
 .cta-text{
-  position: absolute;
-  bottom: 0%;
-  left: 26%;
+  text-align: center;
+  margin: 4rem;
   text-transform: uppercase;
 
 }
-.cta-text span{
-  /* background-color: var(--light-sec-color); */
-  /* color: #fff; */
-}
+ .cta-text span{
+  color: var(--light-sec-color);
+
+} 
+
 .button{
   background-color: var(--light-sec-color);
   color: var(--white);
-  display: flex;
-  margin: 8px auto;  
-  padding: 10px 28px;
+  margin: 4px;
+  padding: 12px 28px;
   border-radius: 8px;
   font-size: 16px;
   text-transform: uppercase;
 }
-
+.button:hover{
+  opacity: 0.7;
+  scale: 0.90;
+  transition: 0.2s ease-in-out;
+}
 
 /* ----------------------device section---------------- */
 .dev-section{
-  margin: 10rem 0 4rem 0;
-  background-color: #f2fff4;
-  padding: 2rem;
+  margin: 6.4rem 1rem;
+  }
 
-}
-.dev-section .row{
+  .row{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: center;  
+  align-items: center; 
 }
-.dev-button{
+.dev-section .row{  
+  border-left: 4px solid var(--light-sec-color); 
+}
+.button{
   background-color: var(--light-sec-color);
   color: var(--white);
   margin: 4px;
-  padding: 20px 28px;
+  padding: 12px 28px;
   border-radius: 8px;
   font-size: 16px;
   text-transform: uppercase;
@@ -119,7 +141,9 @@ margin: 0 auto;
 /* ---------------mechanism section--------------- */
 .mech-section{
   text-align: center;
-  padding: 2rem;
+  padding: 3rem;
+  background-color: #f2fff4;
+
 }
 .mech-section .row{
   display: flex;
@@ -129,16 +153,29 @@ margin: 0 auto;
 }
 .col{
   flex-basis: 16%;
-  box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.1);;
+  box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.06);
   margin: 8px;
   padding: 16px;
-  background-color: var(--dark-sec-color);
-  color: var(--white);
+  border: 1px solid var(--dark-sec-color);
 }
 .icons{
   display: flex ;
   align-items: center;
   justify-content: center;
+}
+
+
+/* -----------------------------------------Apply as a recipient here---------------------------------- */
+.signup{
+  margin: 3rem 0;
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url('./pages/images/img4.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh ;
+  text-align: center;
+  color: #fff;
+  font-size: 1.6rem;
 }
 /* -----------------Subscribe Section------------------- */
 .subs{    
@@ -173,7 +210,7 @@ margin: 0 auto;
   margin: 0;
 }
 .show{
-  display: block;
+  display: none;
 }
 .footer-text{
   display: flex;
@@ -184,4 +221,40 @@ margin: 0 auto;
 .footer ul li{
   list-style: none;
   margin: 16px
+}
+
+/* ---------------------donate page------------------------------- */
+.donors{
+  padding: 5rem 0;
+  background-color: #f2fff4;
+
+}
+.donor{
+   z-index: 1;
+}
+.donor::after{
+content: '';
+position: absolute;
+width: 30%;
+padding: 13px;
+height: 60%;
+right: 4%;
+margin-top: 2rem;
+background-color: var(--light-sec-color);
+z-index: -1;
+}
+
+.donation{
+  text-align: center;
+  width: 64%;
+  margin: 64px auto;
+}
+.donation form{
+  text-align: left;
+  display: grid;
+  gap: 16px;
+  margin: 2rem;
+}
+input, textarea{
+  padding: 16px;
 }

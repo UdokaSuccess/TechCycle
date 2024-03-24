@@ -1,5 +1,5 @@
 import React from 'react'
-import img from './images/img3.jpg'
+import img from './images/img3.png'
 
 function Device() {
   return (
@@ -17,10 +17,10 @@ function Device() {
          </ul>
          <h4>Laptops Condition: </h4>
          <p>Ensure Laptops are in good working conditions</p>
-         <button className='dev-button'>Donate</button>
+         <button className='button'>Donate</button>
       </div>
       <div>
-        <img src={img} width={480}/>
+        <img src={img} width={460}/>
       </div>
       </div>
     </section>
