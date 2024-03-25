@@ -6,9 +6,7 @@ Vanilla CSS
 
 Clone this repository `git clone https://github.com/UdokaSuccess/TechCycle`
 
-Change Directory to this project repository `cd Techcycle`
-
-Change into actual project folder  `cd tech-cycle`
+Change Directory to this project directoryy `cd tech-cycle`
 
 Start the react project `npm start`
 
