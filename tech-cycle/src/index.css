@@ -21,7 +21,20 @@ overflow-x: hidden;
 /* --------------------------------Landing Page Section--------------------------- */
 
 /* ------------------------------------------Navbar section------------------------------------ */
+.navSearch{
+  border-radius: 20px;
+  display: inline-block;
+  width: 3.5rem;
+  height: 0.2rem;
+  outline: none;
+  border-color: gray;
+  text-align: center;
+  color: gray;
 
+}
+.iconStyle{
+ display: flex;
+}
 .navbar{
   display: flex;
   align-items: center;
@@ -257,4 +270,29 @@ z-index: -1;
 }
 input, textarea{
   padding: 16px;
+}
+
+/*-------------------Receiver section--------------*/
+.ReceiverBanner{
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+
+}
+  .ReceiverImg{
+  object-fit: cover;
+  margin: 4rem auto;
+  height: 80vh;
+}
+.ReceiverBannerText{
+  color: var(--white);
+  position: absolute;
+  top: 270px;
+  left: 220px;
+  font-size: 3.2rem ;
+}
+.ReceiverBannerSpan{
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
 }
