@@ -14,14 +14,18 @@ function Navbar(props) {
   }
     return(
       <div className="navbar">
+        <div className='iconStyle' >
         <Link to='/'><img src={img} width={48}/></Link>
+        <p className='iconStyleText'>TECH CYCLE</p>
+        </div>
         <ul className={`nav-list ${showNavbar && 'active'}`}>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/donate'>Donate</Link></li>
-        <li><Link to='/about'>Recieve</Link></li>
+        <li><Link to='/receiver'>Reciever</Link></li>
 
         <li><Link to='/blog'>About</Link></li> 
         <li><Link to='/blog'>Reviews</Link></li>  
+        <input placeholder='Search' className='navSearch'></input>
 
 
          </ul>
