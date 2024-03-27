@@ -296,3 +296,64 @@ input, textarea{
   letter-spacing: 0.1rem;
   font-weight: 500;
 }
+.ReceiveInput, .ReceiveRadio{
+display: flex;
+flex-direction: column;
+margin-top: 2rem
+}
+.radiobtn{
+  margin-top: 6rem;
+}
+.ReceiveInput label, textarea{
+  margin-bottom: 1.5rem;
+}
+.ReceiveInput input, textarea{
+  border-radius: 0.6rem;
+  padding: 1.5rem;
+  outline: none;
+}
+.ReceiveRadio{
+  margin-top: 4rem;
+}
+.ReceiveRadio textarea{
+margin-bottom: 6rem;
+}
+.receiverCta{
+  position: relative;
+  height: 270px;
+}
+.receiverCta p{
+  font-size: larger;
+  color:  rgb(87, 81, 81);
+}
+.receiverCta span{
+  color: red;
+}
+.receiveCta{
+  display: flex;
+  gap: 0.4rem;
+}
+.Receivebtn{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.receiverCta button{
+  display: inline-block;
+  text-align: center;
+  margin: 1.5rem;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  background-color: var(--light-sec-color);
+  color: var(--white);
+  width: 10rem;
+  height: 2rem;
+}
+.receiverCta button:hover{
+  background-color: var(--white);
+  transition: 0.5s ease-in-out;
+  color: black;
+}
