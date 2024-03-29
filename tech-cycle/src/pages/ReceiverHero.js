@@ -7,7 +7,7 @@ function ReceiverHero() {
   return (
     <div className='ReceiverBanner'>
         <img src={banner} className='ReceiverImg' />
-        <h2 className='ReceiverBannerText'>Request for a Laptop <br/><span className='ReceiverBannerSpan'>Submit an aplication for a laptop</span></h2>
+        <h2 className='ReceiverBannerText'>Request for a Laptop <br/><span className='ReceiverBannerSpan'>Submit an application for a laptop</span></h2>
          <ReceiverForm />
          <ReceiverCta />
     </div>

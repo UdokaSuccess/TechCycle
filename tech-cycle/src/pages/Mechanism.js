@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import { FaRegAddressCard } from "react-icons/fa";
 import { MdLaptopWindows } from "react-icons/md";
 import { MdEngineering } from "react-icons/md";
@@ -12,27 +13,33 @@ function Mechanism() {
           <h2>How It Works</h2>
     <div className='row'>
       <div className='col'>
-        <div className='icons'><FaRegAddressCard size={88}/></div>
-        <h4>Sign Up as a Donor</h4>
-        <p>Register and provide necessary information about your device</p>
-      </div>
-      <FaArrowRight size={32} style={{margin: '8px'}}/>
-      <div className='col'>
-      <div className='icons'><MdLaptopWindows size={88}/></div>
-      <h4>Drop Off Your Device</h4>
-      <p>Get the device to our office by mailing or pickUp by our logistics team</p>
+        <div className='icons'><MdLaptopWindows size={88}/></div>
+        <h3>Laptop Donations</h3>
+        <p>Register and provide necessary information about your device.</p>
+        <p>Get the device to our office by mailing or pickUp by our logistics team</p>
       </div>
       <FaArrowRight size={32} style={{margin: '8px'}}/>
       <div className='col'>
       <div className='icons'><MdEngineering  size={88}/></div>
-      <h4>IT Support Process</h4>
-      <p>Our Proficient IT support will erase your data and solve any technical issues.</p>
+      <h3>Device Refurbishing</h3>
+      <p>Our Proficient IT support team will safely erase your data for security.
+        <p>They will perform necessary repairs and fix all technical issues</p>
+      </p>
+      </div>
+        <FaArrowRight size={32} style={{margin: '8px'}}/>
+        <div className='col'>
+      <div className='icons'><FaRegAddressCard size={88}/></div>
+      <h3>Qualification</h3>
+      <p>Individuals can request for donated laptops <Link to='/receiver'>here</Link>.</p>
+      <p>Applications undergo assessment based on financial need, intended laptop usage, and objectives.</p>
       </div>
       <FaArrowRight size={32} style={{margin: '8px'}}/>
       <div className='col'>
       <div className='icons'><TbTruckDelivery  size={88}/></div>
-      <h4>Delivery</h4>
-      <p>Your device gets delivered to individuals and students who need them </p>
+      <h3>Distribution</h3>
+      <p>Your device gets delivered to individuals whose applications were accepted </p>
+      <p>Your device will assist recipients in online education, and remote jobs</p>
+
       </div>
       </div>
     </section>

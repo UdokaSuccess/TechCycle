@@ -23,8 +23,8 @@ function Navbar(props) {
         <li><Link to='/donate'>Donate</Link></li>
         <li><Link to='/receiver'>Reciever</Link></li>
 
-        <li><Link to='/blog'>About</Link></li> 
-        <li><Link to='/blog'>Reviews</Link></li>  
+        <li><Link to='/about'>About</Link></li> 
+        <li><Link to='/contact'>Contact</Link></li>  
         <input placeholder='Search' className='navSearch'></input>
 
 
