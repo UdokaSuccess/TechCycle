@@ -1,11 +1,57 @@
 import React from 'react'
+import {Link, useNavigate} from 'react-router-dom'
+import { useState, useEffect} from 'react'
+import { auth , googleProvider} from "./firebase";
+import { createUserWithEmailAndPassword,signInWithPopup, signOut } from "firebase/auth";
+
 
 function Signup() {
+    const [email, setEmail] = useState("");
+   const [password, setPassword] = useState("");  
+  //  const navigate = useNavigate()
+
+  //  async function signup(){
+  const signup = async () => {
+       try{
+    await createUserWithEmailAndPassword(auth, email, password);
+ }
+      catch(error){
+    console.error(error);
+    }
+   }
+  
+  const signUpWithGoogle = async () => {
+    await signInWithPopup(auth, googleProvider);
+   }
+  // signUpWithGoogle().then((user) =>{  
+  //   console.log(user)
+  //   navigate('/donate')
+  // })
+  // signUpWithGoogle().catch((error) =>{  
+  //   console.error(error)
+  // })
+
+  
+  const logOut = async () => {
+    try {
+    await signOut(auth);
+    } catch (err){
+      console.error(err);
+    }
+  };
+
   return (
-    <div className='signup'>
-        <h3>Do You Need a Laptop?</h3>
-        <p>Apply as a Recipient <a href='#'>here</a></p>
-    </div>
+    <section className='sign-login'>
+            <h2>Sign Up with Tech Cycle</h2>
+    <form className='login-form'>
+        <label>Email: <input type='email' name='email' value={email} required onChange={(e) => setEmail(e.target.value)}/></label>
+        <label>Password: <input type='password' name='password' required minLength={7} value={password} onChange={(e) => setPassword(e.target.value)}/ ></label>
+        <button className='button' onClick={signup} type='submit'>Sign Up</button>
+        <small>Have an account already? <Link to='/login'>log in here</Link></small>
+    </form>
+        <button onClick={signUpWithGoogle} className='button'>Sign Up with your google account</button>
+        <button onClick={logOut}>logOut</button>
+    </section>
   )
 }
 

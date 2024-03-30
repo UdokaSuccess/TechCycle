@@ -30,7 +30,7 @@ function Mechanism() {
         <div className='col'>
       <div className='icons'><FaRegAddressCard size={88}/></div>
       <h3>Qualification</h3>
-      <p>Individuals can request for donated laptops <Link to='/receiver'>here</Link>.</p>
+      <p>Individuals can request for donated laptops</p>
       <p>Applications undergo assessment based on financial need, intended laptop usage, and objectives.</p>
       </div>
       <FaArrowRight size={32} style={{margin: '8px'}}/>

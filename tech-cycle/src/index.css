@@ -61,8 +61,10 @@ overflow-x: hidden;
 /* ----------------------------------hero section----------------------------- */
 .hero-sec{
   /* background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ); */
-  background-color: #f2fff4;
-  height: 100vh;
+  /* project-799244518119 */
+  background-color: #FDFDFD;;
+  
+  height: 90vh;
   margin-bottom: 4rem;
 }
 .hero-sec .row{
@@ -73,7 +75,7 @@ overflow-x: hidden;
 }
 .col1{
   min-width: 320px;
-  margin-top: 80px;
+  margin-top: 64px;
 }
 
 .hero-sec p, .donors p{
@@ -123,8 +125,9 @@ margin: 0 auto;
   /* text-transform: uppercase; */
 }
 .button:hover{
-  opacity: 0.7;
-  scale: 0.90;
+  background-color: var(--white);
+  color: var(--light-sec-color);
+  border: 1px solid #000;
   transition: 0.2s ease-in-out;
 }
 
@@ -228,6 +231,7 @@ margin: 0 auto;
   color: #fff;
   text-align: center;
   margin: 0;
+  padding: 4px;
 }
 .show{
   display: none;
@@ -245,8 +249,8 @@ margin: 0 auto;
 
 /* ---------------------donate page------------------------------- */
 .donors{
-  padding: 5rem 0;
-  background-color: #f2fff4;
+  padding: 3rem 0;
+  /* background-color: #f2fff4; */
 
 }
 .donor{
@@ -372,24 +376,55 @@ margin-bottom: 6rem;
   background-size: cover;
   text-align: center;
   color: #FDFDFD;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
+  margin-bottom: 4.8rem;
 }
 .about-text{
   margin-top: 6.4rem;
+}
+.about-section{
+  text-align: center;
 }
 .about-row{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: justify;
+  margin: 1rem;
 }
 .abt-row{
   display: flex;
   align-items: center;
   justify-content: space-around;
+  text-align: justify;
+  margin: 1.6rem;
+
 }
 .about-section hr{
   padding: 2px;
   width: 50%;
   margin-left: 4px;
   background-color: var(--light-sec-color);
+}
+/* -------------------login && signup------------------------ */
+.sign-login{
+  text-align: center;
+  background-color: #FDFDFD;
+  padding: 8px;
+  /* background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('./pages/images/img1.jpg'); */
+  background-position: center;
+  background-size: cover;
+  /* color: #FDFDFD; */
+}
+.login-form{
+  width: 60%;
+  padding: 2rem;
+  margin: 2rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.login-form input{
+  width: 50%;
+  margin: 1rem;
 }

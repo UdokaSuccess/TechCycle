@@ -19,12 +19,16 @@ function Navbar(props) {
         <p className='iconStyleText'>TECH CYCLE</p>
         </div>
         <ul className={`nav-list ${showNavbar && 'active'}`}>
-        <li><Link to='/'>Home</Link></li>
+        <li><Link to='/'>Home</Link></li>        
+        <li><Link to='/about'>About</Link></li> 
         <li><Link to='/donate'>Donate</Link></li>
         <li><Link to='/receiver'>Reciever</Link></li>
 
-        <li><Link to='/about'>About</Link></li> 
-        <li><Link to='/contact'>Contact</Link></li>  
+
+        <li><Link to='/contact'>Contact</Link></li>        
+        <li><Link to='/signup'>Signup</Link></li>
+        <li><Link to='/login'>Login</Link></li>
+
         <input placeholder='Search' className='navSearch'></input>
 
 

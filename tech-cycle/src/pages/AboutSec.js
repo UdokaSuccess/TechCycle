@@ -11,7 +11,8 @@ import imgd from './images/img9.png'
 function AboutSec() {
   return (
     <div className='about-section'>
-        <h2>Bridging the Digital Divide for All</h2>
+                <h2>Bridging the Digital Divide for All</h2>
+
         <div className='abt-row'> 
             <div>
                 <h3>The Problem </h3>

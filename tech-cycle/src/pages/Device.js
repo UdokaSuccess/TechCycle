@@ -1,5 +1,5 @@
 import React from 'react'
-import img from './images/img3.png'
+import img from './images/img10.png'
 
 function Device() {
   return (

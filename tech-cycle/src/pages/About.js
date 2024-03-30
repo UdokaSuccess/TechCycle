@@ -10,8 +10,8 @@ function About() {
       <p style={{opacity: '0'}}>about us page</p>
       <div className='about-text'>
         <h1>About Us</h1>
-        <p>We are Tech Cycle, a non-profit organisation
-        dedicated to empowering women in need with access to technology
+        <p>We are Tech Cycle, a non-profit organisation<br></br>
+        dedicated to empowering people in need with access to technology
         </p>
         </div>
     </div>
