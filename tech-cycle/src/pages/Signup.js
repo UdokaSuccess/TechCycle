@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link, useNavigate} from 'react-router-dom'
-import { useState, useEffect} from 'react'
+// import { useState, useEffect} from 'react'
 // import { auth , googleProvider} from "./firebase";
 // import { createUserWithEmailAndPassword,signInWithPopup, signOut } from "firebase/auth";
 
@@ -37,7 +37,7 @@ function SignUp() {
   //   await signOut(auth);
   //   } catch (err){
   //     console.error(err);
-  //   }
+  //   }//     "firebase": "^10.10.0",
   // };
 
   return (
