@@ -5,7 +5,7 @@ import { auth , googleProvider} from "./firebase";
 import { createUserWithEmailAndPassword,signInWithPopup, signOut } from "firebase/auth";
 
 
-function Signup() {
+function SignUp() {
     const [email, setEmail] = useState("");
    const [password, setPassword] = useState("");  
   //  const navigate = useNavigate()
@@ -55,4 +55,4 @@ function Signup() {
   )
 }
 
-export default Signup
+export default SignUp
