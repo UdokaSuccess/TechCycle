@@ -6,7 +6,7 @@ import Receiver from "./pages/Receiver";
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import About from "./pages/About"
 import Login from "./pages/Login"
-// import SignUp from "./pages/SignUp";
+import Signup from './pages/Signup'
 
 
 
@@ -19,7 +19,7 @@ function App() {
       <Route path="/donate" element={<DonationPage/>} />
       <Route path="/receiver" element={<Receiver />} />
       <Route path="/about" element={<About />} />
-      {/* <Route path="/signup" element={<SignUp/>} /> */}
+      <Route path="/signup" element={<Signup/>} />
       <Route path="/login" element={<Login/>} />
     </Routes>
     </BrowserRouter>
