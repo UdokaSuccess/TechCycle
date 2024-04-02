@@ -12,11 +12,15 @@ function Device() {
           <li>Apple</li>
           <li>HP</li>
           <li>Samsung</li>
-          <li>lenovo</li>
+          <li>Lenovo</li>
           <li>Dell</li>
          </ul>
          <h4>Laptops Condition: </h4>
-         <p>Ensure Laptops are in good working conditions</p>
+         <ul>
+          <li>Ensure Laptops are in good working conditions, <br></br>and not older than 5 years.</li>
+          <li>Laptops may have minor faults but still functional <br></br>with no major damage like cracked screen or missing keys. </li>
+          <li>Every laptop should include a working charger.</li>
+         </ul>
          <button className='button'>Donate</button>
       </div>
       <div>

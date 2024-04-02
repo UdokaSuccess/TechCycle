@@ -2,23 +2,19 @@
   --light-sec-color: #2a7e3a;
   --dark-sec-color: #11431b;
   --white: white;
-  --font : 
+  --bg : #f2fff4;
   
 }
 body{
 box-sizing: border-box;  
 margin: 0px; 
 padding: 0px;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 scroll-behavior: smooth;
 overflow-x: hidden;
-/* background-color: #f2fff4; */
-
+font-family: Arial, Helvetica, sans-serif
 }
-
-
 /* --------------------------------Landing Page Section--------------------------- */
+
 
 /* ------------------------------------------Navbar section------------------------------------ */
 .navSearch{
@@ -60,50 +56,30 @@ overflow-x: hidden;
 
 /* ----------------------------------hero section----------------------------- */
 .hero-sec{
-  /* background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ); */
-  /* project-799244518119 */
-  background-color: #FDFDFD;;
-  
+  background-color: var(--bg);  
   height: 90vh;
-  margin-bottom: 4rem;
+  margin: 1rem 0 4rem 0;
 }
 .hero-sec .row{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center; 
+  background-color: ;
 }
 .col1{
   min-width: 320px;
-  margin-top: 64px;
+  margin-top: 24px;
 }
-
+.col1 h1{
+  color: var(--light-sec-color);
+  font-weight: 800;
+  font-size: 2.4rem;
+}
 .hero-sec p, .donors p{
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-transform: capitalize;
 }
-
-/* .hero-sec img{
-display: flex;
-margin: 0 auto;
-} */
-/* .top-text{
-  position: absolute;
-  top: 10.1%;
-  color: var(--light-sec-color);
-  width: 30%;
-  background-color: var(--white);
-  text-transform: uppercase;
-}
-.bottom-text{
-  position: absolute;
-  right: 8px;
-  bottom: 18%;
-  font-size: larger;
-  text-transform: uppercase;
-  background-color: var(--white);
-  width: 30%;
-} */
 .cta-text{
   text-align: center;
   margin: 4rem;
@@ -114,28 +90,27 @@ margin: 0 auto;
   color: var(--light-sec-color);
 
 } 
-
 .button{
   background-color: var(--light-sec-color);
   color: var(--white);
-  margin: 4px;
-  padding: 12px 28px;
-  border-radius: 8px;
-  font-size: 16px;
-  /* text-transform: uppercase; */
+  margin: 8px;
+  padding: 28px 58px;
+  border-radius: 16px;
+  font-size: 20px;
+  text-transform: capitalize
 }
+
 .button:hover{
   background-color: var(--white);
   color: var(--light-sec-color);
-  border: 1px solid #000;
+  border: 2px solid;
   transition: 0.2s ease-in-out;
 }
 
-/* ----------------------device section---------------- */
+/* ----------------------device section------------------------------------- */
 .dev-section{
   margin: 6.4rem 1rem;
   }
-
   .row{
   display: flex;
   flex-flow: row wrap;
@@ -145,20 +120,15 @@ margin: 0 auto;
 .dev-section .row{  
   border-left: 4px solid var(--light-sec-color); 
 }
-.button{
-  background-color: var(--light-sec-color);
-  color: var(--white);
-  margin: 4px;
-  padding: 12px 28px;
-  border-radius: 8px;
-  font-size: 16px;
-  text-transform: capitalize
+h2{
+  text-transform: uppercase;
 }
-/* ---------------mechanism section--------------- */
+
+/* ---------------mechanism section-------------------------------- */
 .mech-section{
   text-align: center;
+  background-color: var(--bg);
   padding: 3rem;
-  /* background-color: #f2fff4; */
 
 }
 .mech-section .icons{
@@ -189,48 +159,65 @@ margin: 0 auto;
 
 
 /* -----------------------------------------Apply as a recipient here---------------------------------- */
-.signup{
-  margin: 3rem 0;
-  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url('./pages/images/img4.png');
+.apply{
+  margin: 6rem 0;
+  background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./pages/images/img4.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 70vh ;
   text-align: center;
   color: #fff;
-  font-size: 1.6rem;
 }
-/* -----------------Subscribe Section------------------- */
-.subs{    
-  padding: 16px;    
+.apply-text{
+  position: absolute;
+  left: 32%;
+  margin-top: 6rem;
+ }
+ .apply-text p{
+  font-size: 1.8rem;
+ }
+ .apply-text h3{
+  font-size: 2.8rem;
+ }
+.apply-text a{
+  background-color: var(--dark-sec-color);
+  color: #FDFDFD;
+  padding: 8px;
+  
+}
+/* -----------------Subscribe Section---------------------------------------------------- */
+.subscribe{
+  margin: 0 auto;
   width: 48%;
-  margin: 3rem auto;
-
+  text-align: center;
 }
-
-.subs input{
-  padding: 12px 64px;
+.subscribe form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.subs input[placeholder]{
-  font-size: 14px;
+.subscribe input{
+  padding: 16px 64px;
+}
+.subscribe input[placeholder]{
+  font-size: 20px;
   line-height: 3px;
 }
-
-.subs button{
-  padding: 12px 24px;
+.subscribe button{
+  padding: 16px 48px;
   background-color: var(--light-sec-color);
   color: var(--white);
-  border: none;
+  border-radius: 4px;
+  font-size: 18px;
 }
 
 
-/* ----------------------Footer section---------------- */
+/* ----------------------Footer section-------------------------------------------- */
 .footer{
   background-color: var(--dark-sec-color);    
   color: #fff;
-  text-align: center;
-  margin: 0;
+  margin-top: 4rem;
   padding: 4px;
 }
 .show{
@@ -244,13 +231,19 @@ margin: 0 auto;
 
 .footer ul li{
   list-style: none;
-  margin: 16px
+}
+.footer .copywright{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 16px 40px;
+
 }
 
-/* ---------------------donate page------------------------------- */
+/* ---------------------------------------------------Donate page----------------------------------------- */
 .donors{
   padding: 3rem 0;
-  /* background-color: #f2fff4; */
+  background-color: var(--bg)
 
 }
 .donor{
@@ -262,7 +255,7 @@ position: absolute;
 width: 30%;
 padding: 13px;
 height: 60%;
-right: 4%;
+right: 5%;
 margin-top: 2rem;
 background-color: var(--light-sec-color);
 z-index: -1;
@@ -283,23 +276,28 @@ input, textarea{
   padding: 16px;
 }
 
-/*-------------------Receiver section--------------*/
+/*---------------------------------------Receiver page---------------------------------------------*/
 .ReceiverBanner{
   position: relative;
+  margin: 0 auto; 
+}
+.ReceiveForm{
   max-width: 1000px;
   margin: 0 auto;
-
 }
-  .ReceiverImg{
-  object-fit: cover;
-  margin: 4rem auto;
+.Receiver-hero-sec{
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3) ), url('./pages/images/img4.png');
+  background-position: center;
+  background-size: cover;
+  margin: 1rem auto;
   height: 80vh;
+  width: 96%;
 }
 .ReceiverBannerText{
   color: var(--white);
   position: absolute;
-  top: 270px;
-  left: 220px;
+  top: 4%;
+  left: 32%;
   font-size: 3.2rem ;
 }
 .ReceiverBannerSpan{
@@ -368,7 +366,7 @@ margin-bottom: 6rem;
   transition: 0.5s ease-in-out;
   color: black;
 }
-/* ------------------------About page----------------------------- */
+/* ------------------------About page------------------------------------------------------------ */
 .about-hero{
   height: 80vh;
   background: url(./pages/images/about-bg.png);
@@ -406,7 +404,7 @@ margin-bottom: 6rem;
   margin-left: 4px;
   background-color: var(--light-sec-color);
 }
-/* -------------------login && signup------------------------ */
+/* -------------------login && signup---------------------------------------------------------- */
 .sign-login{
   text-align: center;
   background-color: #FDFDFD;

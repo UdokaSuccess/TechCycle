@@ -1,5 +1,5 @@
 import React from 'react'
-import img from './images/img5.jpg'
+import img from './images/img5.png'
 
 
 function Donate() {
@@ -12,7 +12,7 @@ function Donate() {
             <button className='button'>Donate</button>
             </div>
          <div className='donor'>
-        <img src={img} width={540}/>
+        <img src={img} width={460}/>
         </div>
         </div>
     </div>

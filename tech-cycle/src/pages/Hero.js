@@ -5,17 +5,10 @@ function Hero() {
   return (
     <>
     <div className='hero-sec'>
-      {/* <div className='top-text'>
-        <h2>Join The Tech Cycle <br></br> Community</h2>
-        </div>
-      {/* <img src={heroimg} alt='hero-img'/> */}
-      {/* <div className='bottom-text'>
-        <p>Donate Unused laptops Recieve needed tech Soluions</p>
-        </div> */}
-<div className='row'>
+    <div className='row'>
       <div className='col1'>
-      <h1>JOIN THE TECH CYCLE COMMUNITY</h1>
-      <p>Donate your old  laptops, Recieve needed tech solutions</p>
+      <h1>JOIN THE TECH CYCLE <br></br>COMMUNITY:</h1>
+      <p>Donate your old  laptops,<br></br> Recieve needed tech solutions</p>
          <button className='button'>Donate</button>
       </div>
       <div className='col2'>
@@ -24,7 +17,7 @@ function Hero() {
       </div>
       </div>
     <div className='cta-text'>
-        <h3>Empower Others by donating your gadgets for <span>Social Security</span></h3>
+        <h2>Empower Others by donating your gadgets for <span>Social Security</span></h2>
         <button className='button'>Donate</button>
       </div> 
   </>
