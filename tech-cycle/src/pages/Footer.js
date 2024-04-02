@@ -9,7 +9,6 @@ function Footer() {
            <li><h4>Tech Cycle</h4></li>
            <li>Empowering Individuals in Need:<br></br> Unlocking the <br></br> Benefits of Donating <br></br>Unused Gadgets.
           </li>
-
          </ul>
          <ul>
           <li><h4>Sitemap</h4></li>
@@ -31,13 +30,12 @@ function Footer() {
          <ul>
          <li><h4 className='hide'>Sign Up As a Recipient  <a href='/receiver'>here</a></h4></li>
          </ul>
-
 </div>
 <hr></hr>
 <div className='copywright'>
         <small>Copywright &copy;  Tech Cycle 2024</small>
         <div>
-        <small style={{margin: '8px'}}>Terms of use</small>
+        <small style={{margin: '24px'}}>Terms of use</small>
         <small>Privacy policy</small>
         </div>
 </div>

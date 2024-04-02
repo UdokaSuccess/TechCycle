@@ -65,19 +65,18 @@ font-family: Arial, Helvetica, sans-serif
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center; 
-  background-color: ;
 }
 .col1{
   min-width: 320px;
   margin-top: 24px;
 }
-.col1 h1{
+.col1 h1, .donors h1{
   color: var(--light-sec-color);
   font-weight: 800;
   font-size: 2.4rem;
 }
 .hero-sec p, .donors p{
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-transform: capitalize;
 }
 .cta-text{
@@ -94,7 +93,7 @@ font-family: Arial, Helvetica, sans-serif
   background-color: var(--light-sec-color);
   color: var(--white);
   margin: 8px;
-  padding: 28px 58px;
+  padding: 20px 58px;
   border-radius: 16px;
   font-size: 20px;
   text-transform: capitalize
@@ -201,7 +200,7 @@ h2{
   padding: 16px 64px;
 }
 .subscribe input[placeholder]{
-  font-size: 20px;
+  font-size: 16px;
   line-height: 3px;
 }
 .subscribe button{
@@ -209,7 +208,7 @@ h2{
   background-color: var(--light-sec-color);
   color: var(--white);
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 
@@ -235,7 +234,7 @@ h2{
 .footer .copywright{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 16px 16px 40px;
 
 }
@@ -243,8 +242,8 @@ h2{
 /* ---------------------------------------------------Donate page----------------------------------------- */
 .donors{
   padding: 3rem 0;
-  background-color: var(--bg)
-
+  background-color: var(--bg);
+  margin-top: 1rem;
 }
 .donor{
    z-index: 1;
@@ -260,11 +259,10 @@ margin-top: 2rem;
 background-color: var(--light-sec-color);
 z-index: -1;
 }
-
 .donation{
   text-align: center;
-  width: 64%;
-  margin: 64px auto;
+  width: 88%;
+  margin: 4rem auto;
 }
 .donation form{
   text-align: left;
@@ -272,8 +270,12 @@ z-index: -1;
   gap: 16px;
   margin: 2rem;
 }
-input, textarea{
+input{
   padding: 16px;
+  border-radius: 8px;
+}
+textarea{
+  padding: 48px
 }
 
 /*---------------------------------------Receiver page---------------------------------------------*/
@@ -366,7 +368,7 @@ margin-bottom: 6rem;
   transition: 0.5s ease-in-out;
   color: black;
 }
-/* ------------------------About page------------------------------------------------------------ */
+/* ----------------------------------------------------------------About page---------------------------------------------- */
 .about-hero{
   height: 80vh;
   background: url(./pages/images/about-bg.png);
@@ -395,7 +397,7 @@ margin-bottom: 6rem;
   align-items: center;
   justify-content: space-around;
   text-align: justify;
-  margin: 1.6rem;
+  margin: 1.8rem;
 
 }
 .about-section hr{

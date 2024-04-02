@@ -7,7 +7,7 @@ function Donate() {
     <div className='donors'>
         <div className='row'>
             <div>
-                <h1>DONATE TO TECH CYCLE</h1>
+                <h1>DONATE TO TECH<br></br> CYCLE</h1>
             <p>And become part of our wonderful community</p>
             <button className='button'>Donate</button>
             </div>

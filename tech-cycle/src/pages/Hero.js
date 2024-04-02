@@ -8,7 +8,7 @@ function Hero() {
     <div className='row'>
       <div className='col1'>
       <h1>JOIN THE TECH CYCLE <br></br>COMMUNITY:</h1>
-      <p>Donate your old  laptops,<br></br> Recieve needed tech solutions</p>
+      <p>Donate your old  laptops, Recieve needed tech solutions</p>
          <button className='button'>Donate</button>
       </div>
       <div className='col2'>
