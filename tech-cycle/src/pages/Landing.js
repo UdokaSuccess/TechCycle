@@ -1,7 +1,7 @@
 import Hero from "./Hero";
 import Device from "./Device";
 import Mechanism from "./Mechanism";
-import Signup from "./Signup";
+import Apply from './Apply'
 import Subs from "./Subs";
 import Footer from "./Footer";
 
@@ -12,7 +12,7 @@ function Landing() {
     <Hero/>
     <Device/>
     <Mechanism/>
-    <Signup/>
+    <Apply/>
     <Subs/>
     <Footer/>
     </div>

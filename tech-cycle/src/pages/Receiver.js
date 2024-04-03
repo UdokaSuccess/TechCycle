@@ -1,6 +1,6 @@
 import React from 'react'
 import ReceiverHero from './ReceiverHero'
-import Footer from "../pages/Footer"
+import Footer from "./Footer"
 
 
 function Receiver() {

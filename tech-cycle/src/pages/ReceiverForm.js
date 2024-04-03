@@ -1,4 +1,5 @@
 import React from 'react'
+import ReceiverCta from './ReceiverCta'
 
 function ReceiverForm() {
   return (
@@ -39,6 +40,7 @@ function ReceiverForm() {
             <textarea cols={10} rows={28}></textarea>
             </div>
         </form>
+        <ReceiverCta />
     </div>
   )
 }
