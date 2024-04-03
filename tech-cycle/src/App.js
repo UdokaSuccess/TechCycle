@@ -7,6 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import About from "./pages/About"
 import Login from "./pages/Login"
 import Signup from './pages/Signup'
+import ContactUs from "./pages/ContactUs";
 
 
 
@@ -19,8 +20,10 @@ function App() {
       <Route path="/donate" element={<DonationPage/>} />
       <Route path="/receiver" element={<Receiver />} />
       <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<ContactUs />} />
       <Route path="/signup" element={<Signup/>} />
       <Route path="/login" element={<Login/>} />
+      
     </Routes>
     </BrowserRouter>
   )

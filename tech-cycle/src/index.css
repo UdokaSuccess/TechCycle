@@ -434,6 +434,85 @@ margin-bottom: 6rem;
   justify-content: space-between;
 }
 .login-form input{
+<<<<<<< HEAD
+  width: 50%;
+  margin: 1rem;
+}
+.contact-hero{
+  height: 80vh;
+  background: url(./pages/images/unsplash_UcZcsHSp8o4\ \(1\).png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.contact-hero p{
+position: absolute;
+text-align: center;
+right: 0px;
+bottom: 0px;
+padding: 0 3rem;
+color: var(--white);
+font-weight: 800;
+font-size: 4rem;
+}
+.contact-body h4{
+text-align: center;
+color: rgb(66, 57, 57);
+font-size: 2.3rem;
+word-spacing: 2px;
+margin-top: 2rem;
+}
+.contact-body p{
+  color: rgb(66, 57, 57);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.contact-spacing{
+  margin: 0 7rem;
+}
+.contact-form h5{
+  color:rgb(66, 57, 57) ;
+  font-size: 1.8rem;
+}
+.contact-form-horizon{
+  background-color: var(--dark-sec-color);
+  width: 100%;
+  height: 0.4rem;
+}
+.contactform{
+width: 50%;
+}
+.contact-form p{
+  color:rgb(66, 57, 57) ;
+  font-size: 1.2rem ;
+}
+.ContactInput input{
+  width: 100%;
+  padding: 27px;
+  outline: none;
+  border-radius: 12px;
+  margin: 1.8rem 0;
+}
+.ContactInput label{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color:rgb(66, 57, 57) ;
+
+}
+.contact-textarea textarea{
+  width: 100%;
+}
+.contactformsec{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.contact-img{
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+=======
   width: 90%;
    padding: 16px;
   border-radius: 8px;
@@ -444,4 +523,5 @@ margin-bottom: 6rem;
 .label{
   margin: 0 8px;
   font-weight: 600;
+>>>>>>> 4b04d6805d7042977c78786ddea6a1ac54af0b7f
 }
