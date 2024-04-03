@@ -24,6 +24,7 @@ function ContactForm() {
             <div className='contact-textarea'>
             <textarea cols={10} rows={12}></textarea>
             </div>
+            <input type='submit' className='button' />
             </form>
         </div>
         <div className='contact-img'>

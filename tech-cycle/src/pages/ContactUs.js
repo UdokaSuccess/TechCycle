@@ -1,6 +1,6 @@
 import React from 'react'
 import ContactBody from './ContactBody'
-import Footer from "./"
+import Footer from "../pages/Footer"
 
 function ContactUs() {
   return (
@@ -9,6 +9,7 @@ function ContactUs() {
     <p>Contact T-Cycle</p>
  </div>
  <ContactBody />
+ <Footer />
 
     </section>
    
