@@ -264,7 +264,7 @@ z-index: -1;
   width: 88%;
   margin: 4rem auto;
 }
-.donation form{
+.donation-form{
   text-align: left;
   display: grid;
   gap: 16px;
@@ -299,7 +299,7 @@ textarea{
   color: var(--white);
   position: absolute;
   top: 4%;
-  left: 32%;
+  left: 28%;
   font-size: 3.2rem ;
 }
 .ReceiverBannerSpan{
@@ -406,25 +406,35 @@ margin-bottom: 6rem;
   margin-left: 4px;
   background-color: var(--light-sec-color);
 }
+
 /* -------------------login && signup---------------------------------------------------------- */
 .sign-login{
   text-align: center;
-  background-color: #FDFDFD;
-  padding: 8px;
-  /* background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('./pages/images/img1.jpg'); */
-  background-position: center;
-  background-size: cover;
-  /* color: #FDFDFD; */
+}
+.signup-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signup-col{
+  background-color: var(--bg);
+  flex-basis: 50%;
+}
+.signup-col2{
+  flex-basis: 50%;
 }
 .login-form{
-  width: 60%;
-  padding: 2rem;
-  margin: 2rem auto;
-  text-align: center;
+  text-align: left;
+  gap: 8px;
+  width: 90%;
+  margin: 0 1.2rem;
+  padding: 0 1.2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .login-form input{
+<<<<<<< HEAD
   width: 50%;
   margin: 1rem;
 }
@@ -502,4 +512,16 @@ width: 50%;
   height: 100%;
   align-items: center;
   justify-content: center;
+=======
+  width: 90%;
+   padding: 16px;
+  border-radius: 8px;
+}
+.login-form input[placeholder]{
+  font-size: 1rem;
+}
+.label{
+  margin: 0 8px;
+  font-weight: 600;
+>>>>>>> 4b04d6805d7042977c78786ddea6a1ac54af0b7f
 }
