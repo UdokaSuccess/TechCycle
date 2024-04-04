@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 import { IoMenuSharp } from "react-icons/io5";
 import { useState } from 'react';
-import img from './pages/images/t-cycle.png'
+import img from './pages/images/t-cycle2.png'
 
 
 
@@ -15,8 +15,7 @@ function Navbar(props) {
     return(
       <div className="navbar">
         <div className='iconStyle' >
-        <Link to='/'><img src={img} width={48}/></Link>
-        <p className='iconStyleText'>TECH CYCLE</p>
+        <Link to='/'><img src={img} width={72}/></Link>
         </div>
         <ul className={`nav-list ${showNavbar && 'active'}`}>
         <li><Link to='/'>Home</Link></li>        

@@ -1,4 +1,5 @@
 import Hero from "./Hero";
+import Navbar from "../Navbar";
 import Device from "./Device";
 import Mechanism from "./Mechanism";
 import Apply from './Apply'
@@ -9,6 +10,7 @@ import Footer from "./Footer";
 function Landing() {
   return (
     <div>
+    <Navbar/>
     <Hero/>
     <Device/>
     <Mechanism/>

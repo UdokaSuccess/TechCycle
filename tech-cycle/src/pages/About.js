@@ -2,10 +2,12 @@ import React from 'react'
 import AboutSec from './AboutSec'
 import Footer from './Footer'
 import Mechanism from'./Mechanism'
+import Navbar from '../Navbar'
 
 function About() {
   return (
     <section>
+      <Navbar/>
     <div className='about-hero'>
       <p style={{opacity: '0'}}>about us page</p>
       <div className='about-text'>

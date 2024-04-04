@@ -298,9 +298,10 @@ textarea{
 .ReceiverBannerText{
   color: var(--white);
   position: absolute;
-  top: 4%;
+  top: 3%;
   left: 28%;
-  font-size: 3.2rem ;
+  text-align: center;
+  font-size: 2.2rem ;
 }
 .ReceiverBannerSpan{
   font-size: 1.8rem;
@@ -417,9 +418,13 @@ margin-bottom: 6rem;
   align-items: center;
 }
 .signup-col{
-  background-color: var(--bg);
   flex-basis: 50%;
+  background-color: var()
 }
+.loginpg, .signupp{
+  background: linear-gradient( to right, #f2fff4  0 50%, #fdfdfd 51% 100%)
+}
+
 .signup-col2{
   flex-basis: 50%;
 }
