@@ -6,6 +6,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import About from "./pages/About"
 import Loginpg from "./Loginpg"
 import Signupp from "./Signup2";
+import ContactUs from "./ContactUs";
 
 
 
@@ -17,8 +18,10 @@ function App() {
       <Route path="/donate" element={<DonationPage/>} />
       <Route path="/receiver" element={<Receiver />} />
       <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<ContactUs />} />
       <Route path="/signup" element={<Signupp/>} />
       <Route path="/login" element={<Loginpg/>} />
+      
     </Routes>
     </BrowserRouter>
   )
