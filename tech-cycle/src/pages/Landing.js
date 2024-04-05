@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 function Landing() {
   return (
-    <div>
+    <div className="landing">
     <Navbar/>
     <Hero/>
     <Device/>

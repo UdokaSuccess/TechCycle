@@ -14,23 +14,22 @@ function Navbar(props) {
   }
     return(
       <div className="navbar">
-        <div className='iconStyle' >
-        <Link to='/'><img src={img} width={72}/></Link>
-        </div>
+        <Link to='/'><img src={img} width={80}/></Link>
+
         <ul className={`nav-list ${showNavbar && 'active'}`}>
         <li><Link to='/'>Home</Link></li>        
         <li><Link to='/about'>About</Link></li> 
         <li><Link to='/donate'>Donate</Link></li>
-        <li><Link to='/receiver'>Reciever</Link></li>
+        <li><Link to='/receiver'>Receiver</Link></li>
         <li><Link to='/contact'>Contact</Link></li>        
         <li><Link to='/signup'>Signup</Link></li>
         <li><Link to='/login'>Login</Link></li>
 
-        <input placeholder='Search' className='navSearch'></input>
+        <input placeholder='Search' className='navSearch'/>
 
 
          </ul>
-         <IoMenuSharp className='icon' size={32} onClick={toggleMenu}/>
+         <IoMenuSharp className='icon' size={48} onClick={toggleMenu}/>
          </div>
       )
    } 

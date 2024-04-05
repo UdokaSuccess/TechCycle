@@ -12,7 +12,7 @@ function Hero() {
          <button className='button'>Donate</button>
       </div>
       <div className='col2'>
-        <img src={heroimg} width={420}/>
+        <img src={heroimg} width={420} className='heroimg'/>
       </div>
       </div>
       </div>

@@ -28,9 +28,6 @@ font-family: Arial, Helvetica, sans-serif
   color: gray;
 
 }
-.iconStyle{
- display: flex;
-}
 .navbar{
   display: flex;
   align-items: center;
@@ -44,7 +41,6 @@ font-family: Arial, Helvetica, sans-serif
 }
 .navbar ul li a{
  text-decoration: none;
- /* text-transform: uppercase; */
  color: var(--dark-sec-color);
 }
 .navbar ul li a:hover{
@@ -148,7 +144,6 @@ h2{
   box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.2);
   margin: 8px;
   padding: 16px;
-  /* border: 1px solid var(--dark-sec-color); */
 }
 .icons{
   display: flex ;
@@ -191,7 +186,7 @@ h2{
   width: 48%;
   text-align: center;
 }
-.subscribe form{
+.sub{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,9 +213,6 @@ h2{
   color: #fff;
   margin-top: 4rem;
   padding: 4px;
-}
-.show{
-  display: none;
 }
 .footer-text{
   display: flex;
@@ -537,3 +529,411 @@ width: 50%;
   margin: 0 8px;
   font-weight: 600;
 }
+
+
+
+
+
+/* -----------------------------------------Mobile responsiveness----------------------------------- */
+
+  /* ------------------------------Media queries for smallest screens---------------------------- */
+         @media screen and (max-width: 320px) {
+          .navbar{
+            justify-content: space-between;
+          }
+
+          .nav-list{
+              display: none;
+              position: absolute;           
+              top: 12%;   
+              width: 80%;
+              background-color: var(--light-sec-color);
+              /* overflow: hidden; */
+              transition: all 0.2s ease-in;
+              z-index: 1;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              margin: 8px 4px;
+              padding: 8px 8px 8px 48px;
+            
+           }  
+
+           .nav-list.active{
+              display: block;
+           }
+
+          .navbar ul li{
+             display: block;
+             margin: 16px 0;
+             padding: 4px;
+          }
+          .navbar ul li:hover{
+            /* background-color: rgba(0, 0, 0, 0.3); */
+
+          }
+          .navbar ul li a{
+            color: #FDFDFD;
+          }
+          .icon{
+              display: block;
+          }
+          .navSearch{
+            display: block;
+            width: 2.4rem;
+          }
+
+          /* ----------------------hero section---------------------- */
+          .hero-sec{
+            height: 120vh;
+          }
+          .hero-sec .row{
+            justify-content: center;
+            text-align: center;
+          }
+          .heroimg{
+            width: 300px;
+          }
+          .col1 h1, .donors h1{
+            font-size: 1.6rem;
+          }
+          .cta-text{
+            margin: 2rem;
+          }
+          /* ------------------device section------------------- */
+          .dev-section{
+            margin: 5.6rem 0;
+            text-align: center;
+          }
+          .device-img{
+            width: 300px;
+          }
+
+          /* --------------------mech-section------------------ */
+          .col{
+            flex-basis: 100%;
+            min-width: 240px
+          }
+          /* -----------------------apply as a recipient------------- */
+          .apply-text{
+            left: 0;
+            margin: 2rem;
+          }
+          .apply-text p{
+            font-size: 1.4rem;
+           }
+           .apply-text h3{
+            font-size: 2.4rem;
+           }
+           .apply-text a{
+            background-color: var(--dark-sec-color);
+            color: #FDFDFD;
+            padding: 4px;
+           }
+           /* ------------------------subscribe section-------------- */
+           .subscribe{
+            width: 80%;
+          }
+          .sub{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          }
+          .subscribe input{
+            padding: 16px 48px;
+          }
+          .subscribe input[placeholder]{
+            font-size: 16px;
+            line-height: 3px;
+          }
+          .subscribe button{
+            padding: 16px 48px;
+            background-color: var(--light-sec-color);
+            color: var(--white);
+            border-radius: 4px;
+            font-size: 16px;
+            margin: 4px;
+          }
+
+          /* -------------------------------------footer section------------------- */
+          .footer-text{
+            display: block;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }          
+
+          .footer .copywright{
+            flex-direction: column;
+            justify-content: center;
+            margin: 16px;          
+          }
+          
+          
+
+      }
+
+
+      /* /* ------------------------------Media queries for next screens---------------------------- */
+      @media screen and (min-width: 321px) and (max-width: 396px) {
+        .navbar{
+          justify-content: space-between;
+        }
+
+        .nav-list{
+            display: none;
+            position: absolute;           
+            top: 12%;   
+            width: 80%;
+            background-color: var(--light-sec-color);
+            /* overflow: hidden; */
+            transition: all 0.2s ease-in;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            margin: 8px 4px;
+            padding: 8px 8px 8px 48px;
+          
+         }  
+
+         .nav-list.active{
+            display: block;
+         }
+
+        .navbar ul li{
+           display: block;
+           margin: 16px 0;
+           padding: 4px;
+        }
+        .navbar ul li:hover{
+          /* background-color: rgba(0, 0, 0, 0.3); */
+
+        }
+        .navbar ul li a{
+          color: #FDFDFD;
+        }
+        .icon{
+            display: block;
+        }
+        .navSearch{
+          display: block;
+          width: 2.4rem;
+        }
+
+        /* ----------------------hero section---------------------- */
+        .hero-sec{
+          height: 100vh;
+        }
+        .hero-sec .row{
+          justify-content: center;
+          text-align: center;
+        }
+        .heroimg{
+          width: 340px;
+        }
+        .col1 h1, .donors h1{
+          font-size: 1.6rem;
+        }
+        .cta-text{
+          margin: 2rem;
+        }
+        /* ------------------device section------------------- */
+        .dev-section{
+          margin: 5.6rem 0;
+          text-align: center;
+        }
+        .device-img{
+          width: 340px;
+        }
+
+        /* --------------------mech-section------------------ */
+        .col{
+          flex-basis: 100%;
+          min-width: 300px
+        }
+        /* -----------------------apply as a recipient------------- */
+        .apply-text{
+          left: 0;
+          margin: 4rem;
+        }
+        .apply-text p{
+          font-size: 1.4rem;
+         }
+         .apply-text h3{
+          font-size: 2.4rem;
+         }
+         .apply-text a{
+          background-color: var(--dark-sec-color);
+          color: #FDFDFD;
+          padding: 4px;
+         }
+         /* ------------------------subscribe section-------------- */
+         .subscribe{
+          width: 80%;
+        }
+        .sub{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+        .subscribe input{
+          padding: 16px 54px;
+        }
+        .subscribe input[placeholder]{
+          font-size: 16px;
+          line-height: 3px;
+        }
+        .subscribe button{
+          padding: 16px 56px;
+          background-color: var(--light-sec-color);
+          color: var(--white);
+          border-radius: 4px;
+          font-size: 16px;
+          margin: 8px;
+        }
+
+        /* -------------------------------------footer section------------------- */
+        .footer-text{
+          display: block;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }          
+
+        .footer .copywright{
+          flex-direction: column;
+          justify-content: center;
+          margin: 16px;          
+        }
+         } 
+
+
+
+         /* ---------------------------media query for bigger mobiles  */
+              /* /* ------------------------------Media queries for next screens---------------------------- */
+      @media screen and (min-width: 397px) and (max-width: 480px) {
+        .navbar{
+          justify-content: space-between;
+        }
+
+        .nav-list{
+            display: none;
+            position: absolute;           
+            top: 8%;   
+            width: 88%;
+            background-color: var(--light-sec-color);
+            /* overflow: hidden; */
+            transition: all 0.2s ease-in;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            margin: 8px 4px;
+            padding: 8px 8px 8px 48px;
+          
+         }  
+         .nav-list.active{
+            display: block;
+         }
+
+        .navbar ul li{
+           display: block;
+           margin: 16px 0;
+           padding: 4px;
+        }
+        .navbar ul li a{
+          color: #FDFDFD;
+        }
+        .icon{
+            display: block;
+            width: 88px;
+        }
+        .navSearch{
+          display: block;
+          width: 2.4rem;
+        }
+
+        /* ----------------------hero section---------------------- */
+        .hero-sec{
+          height: 100vh;
+        }
+        .hero-sec .row{
+          justify-content: center;
+          text-align: center;
+        }
+        .heroimg{
+          width: 400px;
+        }
+        .col1 h1, .donors h1{
+          font-size: 1.6rem;
+        }
+        .cta-text{
+          margin: 2rem;
+        }
+        /* ------------------device section------------------- */
+        .dev-section{
+          margin: 5.6rem 0;
+          text-align: center;
+        }
+        .device-img{
+          width: 340px;
+        }
+
+        /* --------------------mech-section------------------ */
+        .col{
+          flex-basis: 100%;
+          min-width: 320px
+        }
+        /* -----------------------apply as a recipient------------- */
+        .apply-text{
+          left: 0;
+          margin-top: 6rem;
+        }
+        .apply-text p{
+          font-size: 1.4rem;
+         }
+         .apply-text h3{
+          font-size: 2.4rem;
+         }
+         .apply-text a{
+          background-color: var(--dark-sec-color);
+          color: #FDFDFD;
+          padding: 4px;
+         }
+         /* ------------------------subscribe section-------------- */
+         .subscribe{
+          width: 80%;
+        }
+        .sub{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+        .subscribe input{
+          padding: 16px 54px;
+        }
+        .subscribe input[placeholder]{
+          font-size: 16px;
+          line-height: 3px;
+        }
+        .subscribe button{
+          padding: 16px 56px;
+          background-color: var(--light-sec-color);
+          color: var(--white);
+          border-radius: 4px;
+          font-size: 16px;
+          margin: 8px;
+        }
+
+        /* -------------------------------------footer section------------------- */
+        .footer-text{
+          display: block;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }          
+
+        .footer .copywright{
+          flex-direction: column;
+          justify-content: center;
+          margin: 16px;          
+        }
+         } 
