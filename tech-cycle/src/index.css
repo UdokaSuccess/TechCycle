@@ -28,9 +28,6 @@ font-family: Arial, Helvetica, sans-serif
   color: gray;
 
 }
-.iconStyle{
- display: flex;
-}
 .navbar{
   display: flex;
   align-items: center;
@@ -44,7 +41,6 @@ font-family: Arial, Helvetica, sans-serif
 }
 .navbar ul li a{
  text-decoration: none;
- /* text-transform: uppercase; */
  color: var(--dark-sec-color);
 }
 .navbar ul li a:hover{
@@ -148,7 +144,6 @@ h2{
   box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.2);
   margin: 8px;
   padding: 16px;
-  /* border: 1px solid var(--dark-sec-color); */
 }
 .icons{
   display: flex ;
@@ -191,7 +186,7 @@ h2{
   width: 48%;
   text-align: center;
 }
-.subscribe form{
+.sub{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,9 +213,6 @@ h2{
   color: #fff;
   margin-top: 4rem;
   padding: 4px;
-}
-.show{
-  display: none;
 }
 .footer-text{
   display: flex;
@@ -293,14 +285,15 @@ textarea{
   background-size: cover;
   margin: 1rem auto;
   height: 80vh;
-  width: 96%;
+  width: 100%;
 }
 .ReceiverBannerText{
   color: var(--white);
   position: absolute;
-  top: 4%;
+  top: 3%;
   left: 28%;
-  font-size: 3.2rem ;
+  text-align: center;
+  font-size: 2.2rem ;
 }
 .ReceiverBannerSpan{
   font-size: 1.8rem;
@@ -353,21 +346,19 @@ margin-bottom: 6rem;
   transform: translate(-50%, -50%);
 }
 .receiverCta button{
-  display: inline-block;
-  text-align: center;
   margin: 1.5rem;
-  padding: 2rem;
+  padding: 2rem 6rem;
   border-radius: 0.8rem;
   background-color: var(--light-sec-color);
   color: var(--white);
-  width: 10rem;
-  height: 2rem;
 }
+
 .receiverCta button:hover{
   background-color: var(--white);
   transition: 0.5s ease-in-out;
-  color: black;
+  color: #000;
 }
+<<<<<<< HEAD
 @media only screen and (max-width: 600px)  {
   .ReceiverBannerText{
     top: 3.5%;
@@ -378,6 +369,9 @@ margin-bottom: 6rem;
   }
 
 }
+=======
+
+>>>>>>> 4b6c7fb9e05f2eb74ef67cad3449a07805ea42c3
 /* ----------------------------------------------------------------About page---------------------------------------------- */
 .about-hero{
   height: 80vh;
@@ -401,6 +395,7 @@ margin-bottom: 6rem;
   justify-content: center;
   text-align: justify;
   margin: 1rem;
+  flex-flow: row wrap;
 }
 .abt-row{
   display: flex;
@@ -408,6 +403,8 @@ margin-bottom: 6rem;
   justify-content: space-around;
   text-align: justify;
   margin: 1.8rem;
+  flex-flow: row wrap;
+
 
 }
 .about-section hr{
@@ -425,11 +422,15 @@ margin-bottom: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
 .signup-col{
-  background-color: var(--bg);
   flex-basis: 50%;
 }
+.loginpg, .signupp{
+  background: linear-gradient( to right, #f2fff4  0 50%, #fdfdfd 51% 100%)
+}
+
 .signup-col2{
   flex-basis: 50%;
 }
@@ -444,10 +445,27 @@ margin-bottom: 6rem;
   justify-content: space-between;
 }
 .login-form input{
+<<<<<<< HEAD
   width: 50%;
   margin: 1rem;
 }
 /*         contact styling               */
+=======
+ width: 90%;
+padding: 16px;
+border-radius: 8px;
+}
+.login-form input[placeholder]{
+font-size: 1rem;
+}
+.label{
+margin: 0 8px;
+font-weight: 600;
+}
+
+
+/* -----------------------------Contact Us page --------------------------------------- */
+>>>>>>> 4b6c7fb9e05f2eb74ef67cad3449a07805ea42c3
 .contact-hero{
   height: 80vh;
   background: url(./pages/images/unsplash_UcZcsHSp8o4\ \(1\).png);
@@ -518,18 +536,24 @@ margin: 0 auto;
   border-radius: 12px;
   margin: 1.8rem 0;
 }
-.ContactInput label{
+.ContactInput label, .contact-textarea label{
   font-weight: 600;
   font-size: 1.2rem;
   color:rgb(66, 57, 57) ;
 
 }
+.contact-img {
+  margin-top: 6rem;
+}
 .contact-textarea textarea{
   width: 100%;
+  margin: 1.8rem 0;
+
 }
 .contactformsec{
   display: flex;
   justify-content: space-between;
+<<<<<<< HEAD
   gap: 5rem;
  
 }
@@ -581,3 +605,947 @@ font-size: 3rem;
     }
 }
 /*            end of contact styling                      */
+=======
+  flex-direction: row;
+ }
+
+
+/* -----------------------------------------Mobile responsiveness----------------------------------- */
+
+  /* ------------------------------Media queries for smallest screens---------------------------- */
+         @media screen and (max-width: 320px) {
+          .navbar{
+            justify-content: space-between;
+          }
+
+          .nav-list{
+              display: none;
+              position: absolute;           
+              top: 12%;   
+              width: 80%;
+              background-color: var(--light-sec-color);
+              /* overflow: hidden; */
+              transition: all 0.2s ease-in;
+              z-index: 1;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              margin: 8px 4px;
+              padding: 8px 8px 8px 48px;
+            
+           }  
+
+           .nav-list.active{
+              display: block;
+           }
+
+          .navbar ul li{
+             display: block;
+             margin: 16px 0;
+             padding: 4px;
+          }
+          .navbar ul li:hover{
+            /* background-color: rgba(0, 0, 0, 0.3); */
+
+          }
+          .navbar ul li a{
+            color: #FDFDFD;
+          }
+          .icon{
+              display: block;
+          }
+          .navSearch{
+            display: block;
+            width: 2.4rem;
+          }
+
+          /* ----------------------hero section---------------------- */
+          .hero-sec{
+            height: 120vh;
+          }
+          .hero-sec .row{
+            justify-content: center;
+            text-align: center;
+          }
+          .heroimg{
+            width: 300px;
+          }
+          .col1 h1, .donors h1{
+            font-size: 1.6rem;
+          }
+          .cta-text{
+            margin: 2rem;
+          }
+          /* ------------------device section------------------- */
+          .dev-section{
+            margin: 5.6rem 0;
+            text-align: center;
+          }
+          .device-img{
+            width: 300px;
+          }
+
+          /* --------------------mech-section------------------ */
+          .col{
+            flex-basis: 100%;
+            min-width: 240px
+          }
+          /* -----------------------apply as a recipient------------- */
+          .apply-text{
+            left: 0;
+            margin: 2rem;
+          }
+          .apply-text p{
+            font-size: 1.4rem;
+           }
+           .apply-text h3{
+            font-size: 2.4rem;
+           }
+           .apply-text a{
+            background-color: var(--dark-sec-color);
+            color: #FDFDFD;
+            padding: 4px;
+           }
+           /* ------------------------subscribe section-------------- */
+           .subscribe{
+            width: 80%;
+          }
+          .sub{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          }
+          .subscribe input{
+            padding: 16px 48px;
+          }
+          .subscribe input[placeholder]{
+            font-size: 16px;
+            line-height: 3px;
+          }
+          .subscribe button{
+            padding: 16px 48px;
+            background-color: var(--light-sec-color);
+            color: var(--white);
+            border-radius: 4px;
+            font-size: 16px;
+            margin: 4px;
+          }
+
+          /* -------------------------------------footer section------------------- */
+          .footer-text{
+            display: block;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }          
+
+          .footer .copywright{
+            flex-direction: column;
+            justify-content: center;
+            margin: 16px;          
+          }
+         /* ---------------about page----------------------- */
+         .about-hero{
+          font-size: 1.4rem;
+        }
+         .abt-row{
+          justify-content: center;
+          text-align: center;
+        }
+        .about-row{
+          flex-flow: column-reverse;
+          justify-content: center;
+          text-align: center;
+        }
+        .about-section img{
+          width: 300px;
+        }
+        .about-section hr{
+          margin-left: 4rem;
+        }      
+        /*------- ----------------------------Donate--------------------- */
+                .donor::after{
+                  display: none;
+                }
+                .donors{
+                  text-align: center;
+                }
+                .donor{
+                  margin-top: 1.2rem;
+                  z-index: 0;
+                }
+                .donor img{
+                  width: 340px;
+                }
+                .donation{
+                  width: 100%;
+                }
+        
+                /* --------------------------------receiver section------------------- */
+              .ReceiverBannerText{
+                left: 0;
+                font-size: 1.8rem;
+                }
+                .Receiver-hero-sec{
+                  width: 100%;
+                }
+                .ReceiveForm{
+                  max-width: 340px;
+                }
+                .ReceiveInput input, textarea{
+                  padding: 1.3rem;
+                }
+                .Receivebtn{
+                 transform: translate(-50%, 0%);
+                }
+                .receiverCta button{
+                  margin: 2.4rem;
+                  padding: 1.6rem 8rem;
+                  border-radius: 0.8rem;
+                }
+        /* -------------------------Contact page------------------------- */
+        .contact-hero{
+          margin-top: 1rem;
+         }
+         .contact-hero p{
+          font-size: 3rem;
+          bottom: 20%;
+         }
+          .contact-form{
+            width: 98%;
+            text-align: center
+          }
+          .contact-spacing{
+            margin: 0;
+          }
+          .contactformsec{
+            flex-direction: column;
+            margin: 8px;
+          }
+          .contactformsec img{
+            width: 300px;
+            text-align: center;
+          }
+          .ContactInput input{
+            padding: 1.6rem 4.4rem;
+          }
+          .contact-img {
+            margin-top: 0;
+          }
+          .contact-textarea textarea{
+            padding: 1.6rem 4.4rem;
+          }
+                  /* -----------------signup and login pages------------------------- */
+        .sign-login{
+          margin: 1rem 0;
+        }
+        .signup-row{
+          flex-direction: column;
+        }
+        .login-form{
+          margin: 0;
+        }
+
+      }
+
+
+      /* /* ------------------------------Media queries for next screens---------------------------- */
+      @media screen and (min-width: 321px) and (max-width: 396px) {
+        .navbar{
+          justify-content: space-between;
+        }
+
+        .nav-list{
+            display: none;
+            position: absolute;           
+            top: 10%;   
+            width: 80%;
+            background-color: var(--light-sec-color);
+            /* overflow: hidden; */
+            transition: all 0.2s ease-in;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            margin: 4px;
+            padding: 8px 8px 8px 60px;
+          
+         }  
+
+         .nav-list.active{
+            display: block;
+         }
+
+        .navbar ul li{
+           display: block;
+           margin: 16px 0;
+           padding: 4px;
+        }
+        .navbar ul li a{
+          color: #FDFDFD;
+        }
+        .icon{
+            display: block;
+        }
+        .navSearch{
+          display: block;
+          width: 2.4rem;
+        }
+
+        /* ----------------------hero section---------------------- */
+        .hero-sec{
+          height: 100vh;
+        }
+        .hero-sec .row{
+          justify-content: center;
+          text-align: center;
+        }
+        .heroimg{
+          width: 340px;
+        }
+        .col1 h1, .donors h1{
+          font-size: 1.6rem;
+        }
+        .cta-text{
+          margin: 2rem;
+        }
+        /* ------------------device section------------------- */
+        .dev-section{
+          margin: 5.6rem 0;
+          text-align: center;
+        }
+        .device-img{
+          width: 340px;
+        }
+
+        /* --------------------mech-section------------------ */
+        .col{
+          flex-basis: 100%;
+          min-width: 300px
+        }
+        /* -----------------------apply as a recipient------------- */
+        .apply-text{
+          left: 0;
+          margin: 4rem;
+        }
+        .apply-text p{
+          font-size: 1.4rem;
+         }
+         .apply-text h3{
+          font-size: 2.4rem;
+         }
+         .apply-text a{
+          background-color: var(--dark-sec-color);
+          color: #FDFDFD;
+          padding: 4px;
+         }
+         /* ------------------------subscribe section-------------- */
+         .subscribe{
+          width: 80%;
+        }
+        .sub{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+        .subscribe input{
+          padding: 16px 54px;
+        }
+        .subscribe input[placeholder]{
+          font-size: 16px;
+          line-height: 3px;
+        }
+        .subscribe button{
+          padding: 16px 56px;
+          background-color: var(--light-sec-color);
+          color: var(--white);
+          border-radius: 4px;
+          font-size: 16px;
+          margin: 8px;
+        }
+
+        /* -------------------------------------footer section------------------- */
+        .footer-text{
+          display: block;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }          
+
+        .footer .copywright{
+          flex-direction: column;
+          justify-content: center;
+          margin: 16px;          
+        }
+        /* ---------------about page----------------------- */
+        .about-hero{
+          font-size: 1.5rem;
+        }
+        .abt-row{
+          justify-content: center;
+          text-align: center;
+        }
+        .about-row{
+          flex-flow: column-reverse;
+          justify-content: center;
+          text-align: center;
+        }
+        .about-section img{
+          width: 320px;
+        }
+        .about-section hr{
+          margin-left: 4rem;
+        }
+
+        /* ----------------------------Donate--------------------- */
+        .donor::after{
+          display: none;
+        }
+        .donors{
+          text-align: center;
+        }
+        .donor{
+          margin-top: 1.2rem;
+          z-index: 0;
+        }
+        .donor img{
+          width: 340px;
+        }
+        .donation{
+          width: 100%;
+        }
+
+        /* --------------------------------receiver section------------------- */
+      .ReceiverBannerText{
+        left: 0;
+        font-size: 1.8rem;
+        }
+        .Receiver-hero-sec{
+          width: 100%;
+        }
+        .ReceiveForm{
+          max-width: 340px;
+        }
+        .ReceiveInput input, textarea{
+          padding: 1.3rem;
+        }
+        .Receivebtn{
+         transform: translate(-50%, 0%);
+        }
+        .receiverCta button{
+          margin: 2.4rem;
+          padding: 1.6rem 8rem;
+          border-radius: 0.8rem;
+        }
+
+        /* -------------------------Contact page------------------------- */
+       .contact-hero{
+        margin-top: 1rem;
+       }
+       .contact-hero p{
+        font-size: 3.4rem;
+        bottom: 20%;
+       }
+        .contact-form{
+          width: 88%;
+          text-align: center
+        }
+        .contact-spacing{
+          margin: 0;
+        }
+        .contactformsec{
+          flex-direction: column;
+          margin: 8px;
+        }
+        .contactformsec img{
+          width: 350px;
+          text-align: center;
+        }
+        .ContactInput input{
+          padding: 1.6rem 6.4rem;
+          width: 80%;
+        }
+        .contact-img {
+          margin-top: 0;
+        }
+        .contact-textarea textarea{
+          padding: 1.6rem 5.4rem;
+        }
+
+        /* -----------------signup and login pages------------------------- */
+        .sign-login{
+          margin: 1rem 2px;
+
+        }
+        .signup-row{
+          flex-direction: column;
+        }
+        .login-form{
+          margin: 0 4px;
+        }
+         } 
+
+
+
+         /* ---------------------------media query for bigger mobiles  */
+              /* /* ------------------------------Media queries for next screens---------------------------- */
+      @media screen and (min-width: 397px) and (max-width: 480px) {
+        .navbar{
+          justify-content: space-between;
+        }
+
+        .nav-list{
+            display: none;
+            position: absolute;           
+            top: 8%;   
+            width: 88%;
+            background-color: var(--light-sec-color);
+            /* overflow: hidden; */
+            transition: all 0.2s ease-in;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            margin: 8px 4px;
+            padding: 8px 8px 8px 48px;
+          
+         }  
+         .nav-list.active{
+            display: block;
+         }
+
+        .navbar ul li{
+           display: block;
+           margin: 16px 0;
+           padding: 4px;
+        }
+        .navbar ul li a{
+          color: #FDFDFD;
+        }
+        .icon{
+            display: block;
+            width: 96px;
+        }
+        .navSearch{
+          display: block;
+          width: 2.4rem;
+        }
+
+        /* ----------------------hero section---------------------- */
+        .hero-sec{
+          height: 100vh;
+        }
+        .hero-sec .row{
+          justify-content: center;
+          text-align: center;
+        }
+        .heroimg{
+          width: 400px;
+        }
+        .col1 h1, .donors h1{
+          font-size: 1.6rem;
+        }
+        .cta-text{
+          margin: 2rem;
+        }
+        /* ------------------device section------------------- */
+        .dev-section{
+          margin: 5.6rem 0;
+          text-align: center;
+        }
+        .device-img{
+          width: 340px;
+        }
+
+        /* --------------------mech-section------------------ */
+        .col{
+          flex-basis: 100%;
+          min-width: 320px
+        }
+        /* -----------------------apply as a recipient------------- */
+        .apply-text{
+          left: 0;
+          margin-top: 6rem;
+        }
+        .apply-text p{
+          font-size: 1.4rem;
+         }
+         .apply-text h3{
+          font-size: 2.4rem;
+         }
+         .apply-text a{
+          background-color: var(--dark-sec-color);
+          color: #FDFDFD;
+          padding: 4px;
+         }
+         /* ------------------------subscribe section-------------- */
+         .subscribe{
+          width: 80%;
+        }
+        .sub{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+        .subscribe input{
+          padding: 16px 54px;
+        }
+        .subscribe input[placeholder]{
+          font-size: 16px;
+          line-height: 3px;
+        }
+        .subscribe button{
+          padding: 16px 56px;
+          background-color: var(--light-sec-color);
+          color: var(--white);
+          border-radius: 4px;
+          font-size: 16px;
+          margin: 8px;
+        }
+
+        /* -------------------------------------footer section------------------- */
+        .footer-text{
+          display: block;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }          
+
+        .footer .copywright{
+          flex-direction: column;
+          justify-content: center;
+          margin: 16px;          
+        }
+         /* ---------------about page----------------------- */
+         .about-hero{
+          font-size: 1.6rem;
+        }
+         .abt-row{
+          justify-content: center;
+          text-align: center;
+        }
+        .about-row{
+          flex-flow: column-reverse;
+          justify-content: center;
+          text-align: center;
+        }
+        .about-section img{
+          width: 396px;
+        }
+        .about-section hr{
+          margin-left: 4rem;
+        }    
+                /* ----------------------------Donate--------------------- */
+                .donor::after{
+                  display: none;
+                }
+                .donors{
+                  text-align: center;
+                }
+                .donor{
+                  margin-top: 1.2rem;
+                  z-index: 0;
+                }
+                .donor img{
+                  width: 340px;
+                }
+                .donation{
+                  width: 100%;
+                }
+        
+                /* --------------------------------receiver section------------------- */
+              .ReceiverBannerText{
+                left: 0;
+                font-size: 1.8rem;
+                }
+                .Receiver-hero-sec{
+                  width: 100%;
+                }
+                .ReceiveForm{
+                  max-width: 340px;
+                }
+                .ReceiveInput input, textarea{
+                  padding: 1.3rem;
+                }
+                .Receivebtn{
+                 transform: translate(-50%, 0%);
+                }
+                .receiverCta button{
+                  margin: 2.4rem;
+                  padding: 1.6rem 8rem;
+                  border-radius: 0.8rem;
+                }
+                  /* -------------------------Contact page------------------------- */
+       .contact-hero{
+        margin-top: 1rem;
+       }
+       .contact-hero p{
+        bottom: 20%;
+       }
+        .contact-form{
+          width: 88%;
+          text-align: center
+        }
+        .contact-spacing{
+          margin: 0;
+        }
+        .contactformsec{
+          flex-direction: column;
+          margin: 8px;
+        }
+        .contactformsec img{
+          width: 400px;
+          text-align: center;
+        }
+        .contact-img {
+          margin-top: 0;
+        }
+        .ContactInput input{
+          padding: 1.6rem 7.2rem;
+          width: 80%;
+        }
+        .contact-textarea textarea{
+          padding: 1.6rem 6.2rem;
+        } 
+                /* -----------------signup and login pages------------------------- */
+                .sign-login{
+                  margin: 1rem 2px;
+        
+                }
+                .signup-row{
+                  flex-direction: column;
+                }
+                .login-form{
+                  margin: 0 4px;
+                }
+         } 
+
+/* --------------------------------media queries for tablets and ipads------------------------------ */
+              /* /* ------------------------------Media queries for tabs screens---------------------------- */
+              @media screen and (min-width: 486px) and (max-width: 820px) {
+                .navbar{
+                  justify-content: space-between;
+                }
+        
+                .nav-list{
+                    display: none;
+                    position: absolute;           
+                    top: 8%;   
+                    width: 88%;
+                    background-color: var(--light-sec-color);
+                    /* overflow: hidden; */
+                    transition: all 0.2s ease-in;
+                    z-index: 1;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    margin: 8px 4px;
+                    padding: 8px 8px 8px 48px;
+                  
+                 }  
+                 .nav-list.active{
+                    display: block;
+                 }
+        
+                .navbar ul li{
+                   display: block;
+                   margin: 16px 0;
+                   padding: 4px;
+                }
+                .navbar ul li a{
+                  color: #FDFDFD;
+                }
+                .icon{
+                    display: block;
+                    width: 96px;
+                }
+                .navSearch{
+                  display: block;
+                  width: 2.4rem;
+                }
+        
+                /* ----------------------hero section---------------------- */
+                .hero-sec{
+                  height: 100vh;
+                }
+                .hero-sec .row{
+                  justify-content: center;
+                  text-align: center;
+                }
+                .heroimg{
+                  width: 400px;
+                }
+                .col1 h1, .donors h1{
+                  font-size: 1.6rem;
+                }
+                .cta-text{
+                  margin: 2rem;
+                }
+                /* ------------------device section------------------- */
+                .dev-section{
+                  margin: 5.6rem 0;
+                  text-align: center;
+                }
+                .device-img{
+                  width: 340px;
+                }
+        
+                /* --------------------mech-section------------------ */
+                .col{
+                  flex-basis: 100%;
+                  min-width: 320px
+                }
+                /* -----------------------apply as a recipient------------- */
+                .apply-text{
+                  left: 0;
+                  margin-top: 6rem;
+                }
+                .apply-text p{
+                  font-size: 1.4rem;
+                 }
+                 .apply-text h3{
+                  font-size: 2.4rem;
+                 }
+                 .apply-text a{
+                  background-color: var(--dark-sec-color);
+                  color: #FDFDFD;
+                  padding: 4px;
+                 }
+                 /* ------------------------subscribe section-------------- */
+                 .subscribe{
+                  width: 80%;
+                }
+                .sub{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+                }
+                .subscribe input{
+                  padding: 16px 54px;
+                }
+                .subscribe input[placeholder]{
+                  font-size: 16px;
+                  line-height: 3px;
+                }
+                .subscribe button{
+                  padding: 16px 56px;
+                  background-color: var(--light-sec-color);
+                  color: var(--white);
+                  border-radius: 4px;
+                  font-size: 16px;
+                  margin: 8px;
+                }
+        
+                /* -------------------------------------footer section------------------- */
+                .footer-text{
+                  display: block;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                }          
+        
+                .footer .copywright{
+                  flex-direction: column;
+                  justify-content: center;
+                  margin: 16px;          
+                }
+                 /* ---------------about page----------------------- */
+                 .about-hero{
+                  font-size: 1.6rem;
+                }
+                 .abt-row{
+                  justify-content: center;
+                  text-align: center;
+                }
+                .about-row{
+                  flex-flow: column-reverse;
+                  justify-content: center;
+                  text-align: center;
+                }
+                .about-section img{
+                  width: 396px;
+                }
+                .about-section hr{
+                  margin-left: 4rem;
+                }    
+                        /* ----------------------------Donate--------------------- */
+                        .donor::after{
+                          display: none;
+                        }
+                        .donors{
+                          text-align: center;
+                        }
+                        .donor{
+                          margin-top: 1.2rem;
+                          z-index: 0;
+                        }
+                        .donor img{
+                          width: 340px;
+                        }
+                        .donation{
+                          width: 100%;
+                        }
+                
+                        /* --------------------------------receiver section------------------- */
+                      .ReceiverBannerText{
+                        left: 0;
+                        font-size: 1.8rem;
+                        }
+                        .Receiver-hero-sec{
+                          width: 100%;
+                        }
+                        .ReceiveForm{
+                          max-width: 340px;
+                        }
+                        .ReceiveInput input, textarea{
+                          padding: 1.3rem;
+                        }
+                        .Receivebtn{
+                         transform: translate(-50%, 0%);
+                        }
+                        .receiverCta button{
+                          margin: 2.4rem;
+                          padding: 1.6rem 8rem;
+                          border-radius: 0.8rem;
+                        }
+                          /* -------------------------Contact page------------------------- */
+               .contact-hero{
+                margin-top: 1rem;
+               }
+               .contact-hero p{
+                bottom: 20%;
+               }
+                .contact-form{
+                  width: 88%;
+                  text-align: center
+                }
+                .contact-spacing{
+                  margin: 0;
+                }
+                .contactformsec{
+                  flex-direction: column;
+                  margin: 8px;
+                }
+                .contactformsec img{
+                  width: 400px;
+                  text-align: center;
+                }
+                .contact-img {
+                  margin-top: 0;
+                }
+                .ContactInput input{
+                  padding: 1.6rem 7.2rem;
+                  width: 80%;
+                }
+                .contact-textarea textarea{
+                  padding: 1.6rem 6.2rem;
+                } 
+                        /* -----------------signup and login pages------------------------- */
+                        .sign-login{
+                          margin: 1rem 2px;
+                
+                        }
+                        .signup-row{
+                          flex-direction: column;
+                        }
+                        .login-form{
+                          margin: 0 4px;
+                        }
+                 } 
+>>>>>>> 4b6c7fb9e05f2eb74ef67cad3449a07805ea42c3

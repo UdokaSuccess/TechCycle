@@ -24,7 +24,7 @@ function Device() {
          <button className='button'>Donate</button>
       </div>
       <div>
-        <img src={img} width={460}/>
+        <img src={img} width={460} className='device-img'/>
       </div>
       </div>
     </section>

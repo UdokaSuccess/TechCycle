@@ -7,8 +7,10 @@ function ReceiverHero() {
     <div className='ReceiverBanner'>
       <div className='Receiver-hero-sec'>
         {/* <img src={banner} className='ReceiverImg'/> */}
-        <h2 className='ReceiverBannerText'>Request for a Laptop</h2>
-        <p>Submit an application for a laptop</p>
+        <div className='ReceiverBannerText'>
+        <h2>Request for a Laptop </h2>
+        <p> Submit an application for a laptop</p>
+        </div>
       </div>
          <ReceiverForm />
     </div>
