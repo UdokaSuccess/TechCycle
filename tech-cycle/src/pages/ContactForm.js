@@ -28,7 +28,7 @@ function ContactForm() {
             </form>
         </div>
         <div className='contact-img'>
-          <img src={image}></img>
+          <img src={image} style={{width: "100%"}}></img>
         </div>
         </div>
     </div>

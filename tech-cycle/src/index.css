@@ -447,6 +447,7 @@ margin-bottom: 6rem;
   width: 50%;
   margin: 1rem;
 }
+/*         contact styling               */
 .contact-hero{
   height: 80vh;
   background: url(./pages/images/unsplash_UcZcsHSp8o4\ \(1\).png);
@@ -499,11 +500,16 @@ width: 50%;
   font-size: 1.2rem ;
 }
 .contactform .button{
-padding: 2rem;
+padding: 1.8rem;
 background-color: var(--dark-sec-color);
 color: white;
 display: inline-block;
 margin: 0 auto;
+}
+.contactform .button:hover{
+  color: var(--dark-sec-color);
+  background-color: white;
+  transition: 0.5s ease;
 }
 .ContactInput input{
   width: 100%;
@@ -524,10 +530,54 @@ margin: 0 auto;
 .contactformsec{
   display: flex;
   justify-content: space-between;
+  gap: 5rem;
  
 }
 .contact-img{
   height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 600px) {
+.contact-hero p{
+right: 0px;
+bottom: 30%;
+font-weight: 800;
+font-size: 3rem;
+}
+.contact-body h4{
+  font-size: 1.5rem;
+  word-spacing: 1.2px;
+  margin-top: 1.8rem;
+  }
+  .contact-body p{
+    font-size: 0.8rem;
+    margin-bottom: 2.4rem;
+  }
+  .contact-form h5{
+    font-size: 1.2rem;
+  }
+  .contact-form p{
+  margin-bottom: 1.2rem;
+  font-size: 0.8rem;
+}
+.contactform{
+  width: 100%;
+  }
+  .contact-img{
+   display: none;
+  }
+  .ContactInput input{
+    width: 100%;
+    padding: 15px;
+    margin: 1.5rem 0;
+  }
+  .ContactInput label{
+    font-size: 0.8rem;
+  }
+  .contactform .button{
+    padding: 1.5rem;
+    }
+}
+/*            end of contact styling                      */
