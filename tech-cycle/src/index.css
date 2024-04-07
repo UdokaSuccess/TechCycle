@@ -368,6 +368,16 @@ margin-bottom: 6rem;
   transition: 0.5s ease-in-out;
   color: black;
 }
+@media only screen and (max-width: 600px)  {
+  .ReceiverBannerText{
+    top: 3.5%;
+    left: 28%;
+    font-size: 2.5rem ;
+  }.Receiver-hero-sec{
+    width: 100%;
+  }
+
+}
 /* ----------------------------------------------------------------About page---------------------------------------------- */
 .about-hero{
   height: 80vh;
