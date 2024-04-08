@@ -1,7 +1,6 @@
 import React from 'react'
 import img from './images/img5.png'
 
-
 function Donate() {
   return (
     <div className='donors'>

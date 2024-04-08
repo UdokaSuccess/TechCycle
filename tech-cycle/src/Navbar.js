@@ -20,12 +20,12 @@ function Navbar(props) {
         <li><Link to='/'>Home</Link></li>        
         <li><Link to='/about'>About</Link></li> 
         <li><Link to='/donate'>Donate</Link></li>
-        <li><Link to='/receiver'>Receiver</Link></li>
+        <li><Link to='/gadgets'>Receiver</Link></li>
         <li><Link to='/contact'>Contact</Link></li>        
         <li><Link to='/signup'>Signup</Link></li>
         <li><Link to='/login'>Login</Link></li>
 
-        <input placeholder='Search' className='navSearch'/>
+        {/* <input placeholder='Search' className='navSearch'/> */}
 
 
          </ul>

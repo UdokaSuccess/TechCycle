@@ -1,5 +1,4 @@
-import Hero from "./Hero";
-import Navbar from "../Navbar";
+import LandingSec from "./LandingSec";
 import Device from "./Device";
 import Mechanism from "./Mechanism";
 import Apply from './Apply'
@@ -9,9 +8,8 @@ import Footer from "./Footer";
 
 function Landing() {
   return (
-    <div className="landing">
-    <Navbar/>
-    <Hero/>
+    <div>
+    <LandingSec/>
     <Device/>
     <Mechanism/>
     <Apply/>
