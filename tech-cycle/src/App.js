@@ -8,7 +8,7 @@ import Gadgetlist from "./Gadgetlist";
 import About from "./pages/About"
 import Loginpg from "./Loginpg"
 import Signupp from "./Signup2";
-import ContactUs from "./ContactUs";
+import ContactUs from "./pages/ContactUs";
 import imga from './pages/images/laptop1.jpg'
 import imgb from './pages/images/laptop2.jpg'
 import imgc from './pages/images/laptop3.jpg'
