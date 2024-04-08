@@ -585,5 +585,8 @@ font-size: 3rem;
       width: 100%;
       margin: 0 auto;
     }
+    .contact-spacing{
+      margin: 0 3rem;
+    }
 }
 /*            end of contact styling                      */
