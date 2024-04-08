@@ -12,7 +12,7 @@ function ContactForm() {
       </div>
       <div className='contactformsec'>
         <div className='contactform'>
-        <form>   
+        <form action=''>   
         <div className='ContactInput'>
             <label for="fname">Full Name</label>
             <input type='text' id='fname'/>
@@ -22,19 +22,13 @@ function ContactForm() {
             <input type='email' id='email'/>
             </div>
             <div className='contact-textarea'>
-            <label>Message:
             <textarea cols={10} rows={12}></textarea>
-            </label>
             </div>
             <input type='submit' className='button' />
             </form>
         </div>
         <div className='contact-img'>
-<<<<<<< HEAD
-          <img src={image} style={{width: "100%"}}></img>
-=======
-          <img src={image}/>
->>>>>>> 4b6c7fb9e05f2eb74ef67cad3449a07805ea42c3
+          <img src={image}></img>
         </div>
         </div>
     </div>

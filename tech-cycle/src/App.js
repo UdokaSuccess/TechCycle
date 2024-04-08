@@ -6,7 +6,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import About from "./pages/About"
 import Loginpg from "./Loginpg"
 import Signupp from "./Signup2";
-import ContactUs from "./ContactUs";
+import ContactUs from "./pages/ContactUs";
 
 
 
