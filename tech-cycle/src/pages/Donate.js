@@ -8,7 +8,9 @@ function Donate() {
             <div>
                 <h1>DONATE TO TECH<br></br> CYCLE</h1>
             <p>And become part of our wonderful community</p>
-            <button className='button'>Donate</button>
+         <a href='#donate-form'><button className='button'>Donate</button></a>
+
+
             </div>
          <div className='donor'>
         <img src={img} width={460}/>

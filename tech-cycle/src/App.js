@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { createContext } from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Landing from "./pages/Landing";
@@ -16,27 +16,34 @@ import imgc from './pages/images/laptop3.jpg'
 
 export const UserContext = createContext()
 
+
 function App() {  
   const [laptopValue, setlaptopValue]= useState('')
   const [specsValue, setspecsValue]= useState('')
   const [picsValue, setpicsValue]= useState('')
-    
+ 
+
 // -------------------To update details using typed response from donate page---------------------
   const handleLaptopName = (e) =>{
-    setlaptopValue(e.target.value)
-    console.log('done')
+    const name = e.target.value
+    setlaptopValue(name)
   }
+
   const handleLaptopSpecs = (e) =>{
-    setspecsValue(e.target.value)
-  }
+    const specs = e.target.value
+    
+    setspecsValue(specs)
+   }
+
   const handlePics = (e) =>{
-    setpicsValue(URL.createObjectURL(e.target.files[0]))   
-  }
+    const imgurl = URL.createObjectURL(e.target.files[0])
+    setpicsValue(imgurl); 
+    }
 
 
   // ----------------To save form details and make it accessible to other components-------------------------------
-  const laptopDetails = [
-    {
+  const laptops = [
+        {
     id: Math.floor(Math.random() * 1000),
     name: 'Hp Pro book',
     image: imga,
@@ -57,15 +64,14 @@ function App() {
     },
     {
     id: Math.floor(Math.random() * 1000),
-    name: 'Hp Pro book',
+    name: 'Macbook Pro ',
     image: imga,
     specs: "5000mah, corei5, 8gb Ram processor, 2ms SSD"},
     {
     id: Math.floor(Math.random() * 1000),
     name: 'Lenovo Thinkpad',
     image: imgb,
-    specs: "8000mah, corei7, 4gb Ram processor, 65cu graphics card",
-    
+    specs: "8000mah, corei7, 4gb Ram processor, 65cu graphics card",    
     },
     {
     id: Math.floor(Math.random() * 1000),
@@ -74,12 +80,21 @@ function App() {
     specs: "5000mah, corei5, 256gb rom HDD, light and flexible",
     }
   ]
-  
-    
-  const [donations, setdonations]= useState(laptopDetails)
 
-  const submit =  () => {
-    const newDonation = 
+
+const laptopDetails = localStorage.getItem('donors')
+? JSON.parse(localStorage.getItem('donors')) : laptops
+
+  const [donations, setdonations]= useState(laptopDetails)
+  
+useEffect(() => {
+  localStorage.setItem("donors", JSON.stringify(donations))
+}, [donations])
+
+
+const submit =  (e) => {
+  e.preventDefault()
+      const newDonation = 
     {
       id: Math.floor(Math.random() * 1000),
       name: laptopValue,
@@ -87,12 +102,33 @@ function App() {
       specs: specsValue      
       }
      const donation =  [...donations, newDonation]
-     setdonations(donation)   
-     setspecsValue('')
+     setdonations(donation)
+     document.getElementsByClassName('donation-form')[0].reset()
      setlaptopValue('')
+     setspecsValue('')
+     document.getElementsByClassName('popup')[0].style.display = "block"
+     document.getElementsByClassName('dim-pg')[0].style.display = "block"
   }
 
-  return (
+
+
+  // -------------------Search Functionality-----------------------------------
+  // const [searchValue, setsearchValue] = useState('')
+  
+ 
+  //   const search = (e) => {  
+  //     setsearchValue(e.target.value)
+  //     if(searchValue.trim().length > 0){
+  //     const filterSearch = donations.filter((item) => (item.name.toLowerCase().includes(searchValue.toLowerCase()) || 
+  //     item.specs.toLowerCase().includes(searchValue.toLowerCase())  ))
+  //     setdonations(filterSearch)
+  //   }
+  //     }
+      // const handleSearchInput = (e) =>{
+   
+      //    }
+
+   return (
     <UserContext.Provider value={donations}>
     <BrowserRouter>
     <Routes>

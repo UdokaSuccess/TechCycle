@@ -1,5 +1,6 @@
 import React from 'react'
 import img from './images/img10.png'
+import { Link } from 'react-router-dom'
 
 function Device() {
   return (
@@ -21,7 +22,8 @@ function Device() {
           <li>Laptops may have minor faults but still functional <br></br>with no major damage like cracked screen or missing keys. </li>
           <li>Every laptop should include a working charger.</li>
          </ul>
-         <button className='button'>Donate</button>
+         <a href='/donate'><button className='button'>Donate</button></a>
+
       </div>
       <div>
         <img src={img} width={460} className='device-img'/>

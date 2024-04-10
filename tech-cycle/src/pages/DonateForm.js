@@ -1,15 +1,17 @@
-import React from 'react'
+import Popup from './Popup'
 
 
 
 
-function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename, devicepics, devicespecs, submit}) {
+function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename, devicespecs, submit, popUp}) {
+ 
   return (
-    <div className='donation'>
+    <div className='donation' id='donate-form'>
+          <div className='dim-pg'></div>
     <h2>Donation Form</h2>
     <small>Thank You for your interest in donating to tech cycle to help transform lives.</small>
     <small>Please complete the form below, our team will reach out to you with instructions on how to proceed with sending your donation</small>
-    <form className="donation-form">
+    <form className="donation-form" onSubmit={submit}>
         <label>Full Name:</label> <input type='text' required/>
         <label>Email Address:</label> <input type='email' required/>
         <label>Location:</label> <input type='text' required/>
@@ -18,14 +20,17 @@ function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename
        <label>Upload a Photo of Your Laptop</label>
        <input type='file' required size={80} accept=".png, .jpg, .jpeg" onChange={handlePics}/>
         <label>Is your device working properly? 
-        <input type='radio' />Yes <input type='radio'/>No
+        <input type='radio' name='select' />yes <input type='radio' name='select'/>No
         </label>
        <label><input type='checkbox'/>I want to recieve updates on how my donation is transforming individuals.</label>
        <small>By ticking the box below, you agree to tech cycle's <a href='#'>term's of service</a> and <a href='#'>privacy policy</a></small>
        <label><input type='checkbox' required/>I agree to tech cycle's terms and conditions.</label>
+       <button className='button' type='submit'>Submit</button>        
     </form>
-    <button className='button' onClick={submit}>Submit</button>
-    </div>
+    <Popup/>
+       </div>
+
+
   )
 }
 
