@@ -85,10 +85,7 @@ img:hover{
   color: var(--text);
   margin: 24px 8px;
 }
-a{
-  text-decoration: none;
-  color: #FDFDFD;
-}
+
 .cta-text{
   text-align: center;
   margin: 4rem;
