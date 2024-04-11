@@ -19,10 +19,10 @@ img:hover{
   transform: scale(1.1);
   transition: 0.5s ease-in-out;
 }
-/* --------------------------------Landing Page Section--------------------------- */
+/* --------------------------------Landing Page Section----------------------------------------- */
 
 
-/* ------------------------------------------Navbar section------------------------------------ */
+/* ------------------------------------------Navbar section-------------------------------- */
 .navSearch{
   border-radius: 20px;
   display: inline-block;
@@ -113,16 +113,15 @@ img:hover{
   transition: 0.2s ease-in-out;
 }
  
-  /* linear-gradient( to left, #f2fff4  0 48%, #fdfdfd 50% 100%) */
-
-/* .text1{
+.text{
   animation: change 3s ease-in;
-  margin: 2px;
+  margin: 2px; 
+  overflow: hidden;
+}
 
-
-@keyframes change {
+/* @keyframes change {
   100% { opacity: 1; transform: translateY(-50px);  }
-} */
+} */ */
 
 /* ----------------------device section------------------------------------- */
 .dev-section{
@@ -139,6 +138,8 @@ img:hover{
 }
 h2{
   text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 /* ---------------mechanism section-------------------------------- */
@@ -162,9 +163,9 @@ h2{
   align-items: center;
 }
 .col{
-  flex-basis: 17%;
+  flex-basis: 18%;
   box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.2);
-  margin: 8px;
+  margin: 4px;
   padding: 16px;
 }
 .icons{
@@ -291,7 +292,7 @@ z-index: -1;
   margin: 0;
 }
 .popup{
-  display: none;
+  /* display: none; */
   width: 80%;
   height: 50%;
   position: fixed;
@@ -866,7 +867,61 @@ width: 50%;
                 .donation{
                   width: 100%;
                 }
+                .popup{
+                  /* display: none; */
+                  width: 80%;
+                  height: 80%;
+                  position: fixed;
+                  bottom: 0;
+                  top: 8%;
+                  z-index: 32;
+                  border: 3px solid #f1f1f1;  
+                  background-color: #FDFDFD;
+                  padding: 2rem;
+                  box-shadow:  0px 8px 16px 0px rgba(0,0,0,0.2);
+                  transform: scale(1.02);
+                  transition: 0.5s ease-in-out;
+                 }
+                
+                .popup-container{
+                  max-width: 320px;
+                  max-height: 400px;
+                  padding:  0 2rem;
+                  margin: 0;
+                  background: url('./pages/images/ellipse.png');
+                  background-repeat: repeat-y;
+                  background-position: left
+                }
+                .popup-container::after{
+                  content: '';
+                  position: absolute;
+                  padding: 7rem 2rem;
+                  right: 0;
+                  top: 0;
+                  height: 20%;
+                  background-color: #FDFDFD;
+                  background: url('./pages/images/ellipse.png');
+                  background-repeat: repeat-y;
+                  background-position: left;
+                   margin: 2rem;
+                }
 
+                .btn{
+                 margin: 4px;
+                 font-size: 1.1rem;
+                 padding: 8px 16px;
+                color: #FDFDFD;                                
+                }
+                .btn-close{
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 8px 16px;
+                margin: 8px;
+                background-color: var(--light-sec-color);
+                color: #FDFDFD;
+                border-radius: 2px;
+                }
                 /* -----------------------Gadget listing page----------------------------------- */
                 .gadgets-sec{
                   margin: 3rem 0;

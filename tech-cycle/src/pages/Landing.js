@@ -11,7 +11,7 @@ function Landing() {
     <div>
     <LandingSec/>
     <Device/>
-    <Mechanism/>
+    <Mechanism varbg={'#f2fff4'}/>
     <Apply/>
     <Subs/>
     <Footer/>

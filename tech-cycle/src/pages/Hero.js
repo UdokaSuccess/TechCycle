@@ -19,12 +19,12 @@ function Hero() {
       </div>
       </div>
     <div className='cta-text'>
-        <h2>Empower Others by donating your gadgets for
-          <div className='text' style={{display : 'grid'}}>
+        <h2>Empower Others by donating your gadgets for 
+          {/* <div className='text'> */}
           <span className='text1'>Social Security</span>
           <span className='text2'>Ensuring Future Safety</span>
           <span className='text3'>Global Security</span>
-          </div>
+          {/* </div> */}
         </h2>
         <Link to='/donate'><button className='button'>Donate</button></Link>
       </div> 

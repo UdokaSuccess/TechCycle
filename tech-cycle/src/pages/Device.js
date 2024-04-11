@@ -8,7 +8,7 @@ function Device() {
     <div className='row'>
       <div>
         <h2>Device Donation Guidelines</h2>
-        <h4>Accepted Devices: Laptops</h4>
+        <h3>Accepted Devices: Laptops</h3>
          <ul>
           <li>Apple</li>
           <li>HP</li>
@@ -16,7 +16,7 @@ function Device() {
           <li>Lenovo</li>
           <li>Dell</li>
          </ul>
-         <h4>Laptops Condition: </h4>
+         <h3>Laptops Condition: </h3>
          <ul>
           <li>Ensure Laptops are in good working conditions, <br></br>and not older than 5 years.</li>
           <li>Laptops may have minor faults but still functional <br></br>with no major damage like cracked screen or missing keys. </li>
