@@ -12,7 +12,7 @@ function ContactForm() {
       </div>
       <div className='contactformsec'>
         <div className='contactform'>
-        <form action='post'>   
+        <form>   
         <div className='ContactInput'>
             <label for="fname">Full Name</label>
             <input type='text' id='fname'/>

@@ -23,7 +23,7 @@ function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename
         <input type='radio' name='select' />yes <input type='radio' name='select'/>No
         </label>
        <label><input type='checkbox'/>I want to recieve updates on how my donation is transforming individuals.</label>
-       <small>By ticking the box below, you agree to tech cycle's <a href='#'>term's of service</a> and <a href='#'>privacy policy</a></small>
+       <small>By ticking the box below, you agree to tech cycle's <a href='/contact'>term's of service</a> and <a href='#'>privacy policy</a></small>
        <label><input type='checkbox' required/>I agree to tech cycle's terms and conditions.</label>
        <button className='button' type='submit'>Submit</button>        
     </form>
