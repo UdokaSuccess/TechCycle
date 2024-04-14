@@ -9,8 +9,7 @@ function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename
     <div className='donation' id='donate-form'>
           <div className='dim-pg'></div>
     <h2>Donation Form</h2>
-    <small>Thank You for your interest in donating to tech cycle to help transform lives.</small>
-    <small>Please complete the form below, our team will reach out to you with instructions on how to proceed with sending your donation</small>
+    <small>Thank You for your interest in donating to tech cycle to help transform lives. Please complete the form below, our team will reach out to you with instructions on how to proceed with sending your donation</small>
     <form className="donation-form" onSubmit={submit}>
         <label>Full Name:</label> <input type='text' required/>
         <label>Email Address:</label> <input type='email' required/>

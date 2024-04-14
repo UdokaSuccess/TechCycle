@@ -4,9 +4,9 @@ import img from './images/img5.png'
 function Donate() {
   return (
     <div className='donors'>
-        <div className='row'>
-            <div>
-                <h2>DONATE TO TECH<br></br> CYCLE</h2>
+        <div className='donate-row'>
+            <div className='donor-col'>
+                <h2>DONATE TO TECH CYCLE</h2>
             <p>And become part of our wonderful community</p>
          <a href='#donate-form'><button className='button'>Donate</button></a>
             </div>

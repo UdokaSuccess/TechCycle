@@ -7,7 +7,7 @@ import { TbTruckDelivery } from "react-icons/tb";
 import { FaArrowRight } from "react-icons/fa";
 
 
-function Mechanism({varbg}) {
+function Mechanism() {
   return (
           <section className='mech-section'>
           <h2>How It Works</h2>

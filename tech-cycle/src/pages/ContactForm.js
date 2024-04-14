@@ -3,7 +3,7 @@ import image from '../pages/images/contactimg.png'
 
 function ContactForm() {
   return (
-    <div>
+    <div className='contact'>
       <div className='contact-form'>
       <h5>Contact Us By Email <br />
       <div className='contact-form-horizon'></div>
@@ -22,6 +22,7 @@ function ContactForm() {
             <input type='email' id='email'/>
             </div>
             <div className='contact-textarea'>
+            <label for="email">Complaint</label>
             <textarea cols={10} rows={12}></textarea>
             </div>
             <input type='submit' className='button' />
