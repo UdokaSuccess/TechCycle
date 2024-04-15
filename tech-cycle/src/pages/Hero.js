@@ -1,5 +1,5 @@
 import React from 'react'
-import heroimg from './images/heroimg2.png'
+import heroimg from './images/heroimg5.png'
 import { Link } from 'react-router-dom'
 
 function Hero() {
@@ -14,7 +14,7 @@ function Hero() {
 
       </div>
       <div className='col2'>
-        <img src={heroimg} width={480} className='heroimg'/>
+        <img src={heroimg} width={640} className='heroimg'/>
       </div>
       </div>
       </div>

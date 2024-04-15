@@ -65,17 +65,18 @@ img:hover{
 .hero-sec .row{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center; 
 }
 .col1{
   min-width: 320px;
-  margin-top: 0;
+  margin-top: 4px;
+  margin-right: 0;
 }
 .col1 h1, .donors h1{
   color: var(--light-sec-color);
   font-weight: 700;
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 .hero-sec p, .donors p{
