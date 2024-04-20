@@ -88,7 +88,7 @@ img:hover{
 }
 #text::before { 
   content: "Social Security"; 
-  animation: animate ease-in-out 7s infinite;
+  animation: animate ease-in-out 5s infinite;
   color: var(--light-sec-color);
 } 
 
@@ -98,9 +98,11 @@ img:hover{
   } 
   50% { 
       content: "Better Digital Literacy"; 
+      transform: scale(1.1)
   } 
   100% { 
       content: "Increased Connectivity"; 
+      transform: translateX(-50px);
   } 
 } 
 .cta-text{
