@@ -9,6 +9,7 @@ import About from "./pages/About"
 import Loginpg from "./Loginpg"
 import Signupp from "./Signup2";
 import ContactUs from "./ContactUs";
+import Protected from './pages/Protected';
 import imga from './pages/images/laptop1.jpg'
 import imgb from './pages/images/laptop2.jpg'
 import imgc from './pages/images/laptop3.jpg'
@@ -133,14 +134,17 @@ const submit =  (e) => {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Landing/>} />
+      <Route path="/signup" element={<Signupp/>} />
+      <Route path="/login" element={<Loginpg/>} />  
+      
+      <Route element={<Protected/>}>
       <Route path="/donate" element={<DonationPage handleLaptopName={handleLaptopName} handleLaptopSpecs={handleLaptopSpecs} handlePics={handlePics} devicename={laptopValue} devicespecs={specsValue} submitbtn={submit}/>} />
       <Route path="/gadgets" element={<Gadgetlist/>} />
       <Route path="/receiver" element={<Receiver />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<ContactUs />} />
-      <Route path="/signup" element={<Signupp/>} />
-      <Route path="/login" element={<Loginpg/>} />   
-    </Routes>
+      </Route> 
+     </Routes>
     </BrowserRouter>
     </UserContext.Provider> 
   )
