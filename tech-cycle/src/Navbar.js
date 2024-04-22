@@ -1,18 +1,21 @@
 import {Link} from 'react-router-dom'
 import { IoMenuSharp } from "react-icons/io5";
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 import img from './pages/images/t-cycle2.png'
+import { logOut } from './pages/Login';
+import { auth} from "./pages/firebase"
 
 
+const user = auth.currentUser
 
-function Navbar(props) { 
+function Navbar() { 
   const [showNavbar, setShowNavbar] = useState(false)
 
   const toggleMenu = () => {
     console.log('clicked')
     setShowNavbar(!showNavbar)
   }
-    return(
+    return (
       <div className="navbar">
         <Link to='/'><img src={img} width={80}/></Link>
 
@@ -21,16 +24,18 @@ function Navbar(props) {
         <li><Link to='/about'>About</Link></li> 
         <li><Link to='/donate'>Donate</Link></li>
         <li><Link to='/gadgets'>Receive</Link></li>
-        <li><Link to='/contact'>Contact</Link></li>        
-        <li><Link to='/signup'>Signup</Link></li>
-        <li><Link to='/login'>Login</Link></li>
-
-        {/* <input placeholder='Search' className='navSearch'/> */}
-
-
-         </ul>
+        <li><Link to='/contact'>Contact</Link></li>               
+       { 
+       !user ? (
+        <div>
+          <li id='signup'><Link to='/signup' key={1}>Signup</Link></li>
+          <li id='login'><Link to='/login' key={2}>Login</Link></li>
+      </div>) : (<li id='logout' onClick={logOut} key={0}><Link>Logout</Link></li>)
+     }      
+      </ul>
          <IoMenuSharp className='icon' size={48} onClick={toggleMenu}/>
          </div>
       )
-   } 
+      
+    } 
    export default Navbar;

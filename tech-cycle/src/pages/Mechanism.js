@@ -22,9 +22,9 @@ function Mechanism() {
       <div className='col'>
       <div className='icons'><MdEngineering  size={72}/></div>
       <h3>Device Refurbishing</h3>
-      <p>Our Proficient IT support team will safely erase your data for security.
+      <p>Our Proficient IT support team will safely erase your data for security.</p>
         <p>They will perform necessary repairs and fix all technical issues</p>
-      </p>
+      
       </div>
         <FaArrowRight size={32} style={{margin: '8px'}}/>
         <div className='col'>

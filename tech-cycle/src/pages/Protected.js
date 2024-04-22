@@ -3,7 +3,7 @@ import { auth } from "./firebase"
 
 function Protected() {
   const location = useLocation()
-  return auth.currentUser ?(<Outlet/>): (<Navigate to= '/signup' state={{from: location}} replace/>)
+  return auth.currentUser ?(<Outlet/>): (<Navigate to= '/login' state={{from: location}} replace/>)
 } 
 
 export default Protected

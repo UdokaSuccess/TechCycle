@@ -22,7 +22,7 @@ function Device() {
           <li>Laptops may have minor faults but still functional <br></br>with no major damage like cracked screen or missing keys. </li>
           <li>Every laptop should include a working charger.</li>
          </ul>
-         <a href='/donate'><button className='button'>Donate</button></a>
+         <Link to='/donate'><button className='button'>Donate</button></Link>
 
       </div>
       <div>
