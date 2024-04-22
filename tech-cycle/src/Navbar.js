@@ -27,10 +27,10 @@ function Navbar() {
         <li><Link to='/contact'>Contact</Link></li>               
        { 
        !user ? (
-        <div>
-          <li id='signup'><Link to='/signup' key={1}>Signup</Link></li>
-          <li id='login'><Link to='/login' key={2}>Login</Link></li>
-      </div>) : (<li id='logout' onClick={logOut} key={0}><Link>Logout</Link></li>)
+        <>
+          <li id='signup'><Link to='/signup' >Signup</Link></li>
+          <li id='login'><Link to='/login' >Login</Link></li>
+      </>) : (<li id='logout' onClick={logOut} ><Link>Logout</Link></li>)
      }      
       </ul>
          <IoMenuSharp className='icon' size={48} onClick={toggleMenu}/>

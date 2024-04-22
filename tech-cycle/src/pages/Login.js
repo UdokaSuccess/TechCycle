@@ -19,9 +19,9 @@ function Login() {
 
    const login = async (e) =>{
     e.preventDefault() 
+    error = null        
        try {
          await signInWithEmailAndPassword(auth, email, password) 
-         error = null        
           // navigate(removefrom, {replace: true})
           window.location.assign(removefrom);          
          setEmail('')
