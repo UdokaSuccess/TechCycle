@@ -3,10 +3,10 @@ import Navbar from './Navbar'
 import LaptopItems from './pages/Gadgets'
 import Footer from './pages/Footer'
 
-function Gadgetlist() {
+function Gadgetlist({isLoggedIn}) {
   return (
     <div>
-      <Navbar/>
+      <Navbar isLoggedIn={isLoggedIn}/>
       <LaptopItems/>
       <Footer/>
     </div>

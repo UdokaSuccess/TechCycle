@@ -3,6 +3,10 @@ import Popup from './Popup'
 
 
 
+
+
+
+
 function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename, devicespecs, submit, popUp}) {
  
   return (
@@ -12,7 +16,7 @@ function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename
     <small>Thank You for your interest in donating to tech cycle to help transform lives. Please complete the form below, our team will reach out to you with instructions on how to proceed with sending your donation</small>
     <form className="donation-form" onSubmit={submit}>
         <label>Full Name:</label> <input type='text' required/>
-        <label>Email Address:</label> <input type='email' required/>
+        <label>Email Address:</label> <input type='email' required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"/>
         <label>Location:</label> <input type='text' required/>
         <label>Laptop Name:</label> <input type='text' required onChange={ handleLaptopName} value={devicename}/>
         <label>Laptop Specification:</label> <textarea type='text' required className='textarea' onChange={ handleLaptopSpecs} value={devicespecs}></textarea>

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { createContext } from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Reset from './pages/Reset';
 import Landing from "./pages/Landing";
 import DonationPage from "./pages/DonationPage";
 import Receiver from "./pages/Receiver";
@@ -14,7 +15,7 @@ import imga from './pages/images/laptop1.jpg'
 import imgb from './pages/images/laptop2.jpg'
 import imgc from './pages/images/laptop3.jpg'
 
-
+// ---------------to make context accessible across all pages--------------------
 export const UserContext = createContext()
 
 
@@ -136,6 +137,8 @@ const submit =  (e) => {
       <Route path="/" element={<Landing/>} />
       <Route path="/signup" element={<Signupp/>} />
       <Route path="/login" element={<Loginpg/>} />  
+      <Route path="/reset" element={<Reset/>} />  
+
       
       <Route element={<Protected/>}>
       <Route path="/donate" element={<DonationPage handleLaptopName={handleLaptopName} handleLaptopSpecs={handleLaptopSpecs} handlePics={handlePics} devicename={laptopValue} devicespecs={specsValue} submitbtn={submit}/>} />

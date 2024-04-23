@@ -19,6 +19,9 @@ img:hover{
   transform: scale(1.1);
   transition: 0.5s ease-in-out;
 }
+#error, #error2, #error3{
+  color: #FF0000;
+}
 /* --------------------------------Landing Page Section----------------------------------------- */
 
 
@@ -640,7 +643,23 @@ font-size: 1rem;
 margin: 0 8px;
 font-weight: 600;
 }
+.google-button{
+  padding: 8px 16px;
+  background-color: var(--light-sec-color);
+  color: #FDFDFD;
+  border-radius: 12px;
 
+}
+/* ----------------------------reset password */
+.reset-form{
+  width: 70%;
+  padding: 4rem;
+  height: 60vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.1);
+}
 
 /* -----------------------------Contact Us page --------------------------------------- */
 .contact-hero{

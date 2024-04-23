@@ -14,15 +14,15 @@ function ContactForm() {
         <div className='contactform'>
         <form>   
         <div className='ContactInput'>
-            <label for="fname">Full Name</label>
+            <label>Full Name</label>
             <input type='text' id='fname'/>
             </div> 
             <div className='ContactInput'>
-            <label for="email">Email Address</label>
+            <label>Email Address</label>
             <input type='email' id='email'/>
             </div>
             <div className='contact-textarea'>
-            <label for="email">Complaint</label>
+            <label>Complaint</label>
             <textarea cols={10} rows={12}></textarea>
             </div>
             <input type='submit' className='button' />
