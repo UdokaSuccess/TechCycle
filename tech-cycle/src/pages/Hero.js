@@ -10,11 +10,10 @@ function Hero() {
       <div className='col1'>
       <h1>JOIN THE TECH CYCLE <br></br>COMMUNITY:</h1>
       <p>Donate your old  laptops, <br></br>Recieve needed tech solutions</p>
-      <Link to='/donate'><button className='button'>Sign Up</button></Link>
+      <Link to='/about'><button className='button'>Learn More</button></Link>
 
       </div>
       <div className='col2'>
-        <img src={heroimg} width={640} className='heroimg'/>
       </div>
       </div>
       </div>

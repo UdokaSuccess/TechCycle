@@ -56,7 +56,7 @@ const signUpWithGoogle = async () => {
      <h2>Create Account</h2>
         <label className='label'>Full Name: <input type='text' name='name' required placeholder='Enter your full Name'/></label>
          <label className='label'>Email: <input type='email' name='email' required placeholder='Enter Your Email Address' onChange={(e) => setEmail(e.target.value)} pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"/></label>
-         <label className='label'>Password: <input type='password' name='password' required placeholder='Enter Your Password' minLength={6} onChange={(e) => setPassword(e.target.value)}/></label>
+         <label className='label'>Password: <input type='password' name='password' required placeholder='Enter Your Password' minLength={8} onChange={(e) => setPassword(e.target.value)} pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" /></label>
          <label className='label'>Confirm Password: <input type='password' name='confirm password' required placeholder='Confirm Password' minLength={6}  onChange={(e) => setconfirmPassword(e.target.value)}/></label>
         <small id='error3'></small>
 

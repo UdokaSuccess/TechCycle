@@ -6,8 +6,6 @@ import imgd from './images/img9.png'
 
 
 
-
-
 function AboutSec() {
   return (
     <div className='about-section'>
@@ -56,7 +54,7 @@ function AboutSec() {
             <div>
                 <h3>Join Us</h3>
                 <hr></hr>
-                <p>We are continually seeking avenues to broaden our influence. <br></br>Here's how you can contribute:</p>
+          <p>We are continually seeking avenues to broaden our influence. <br></br>Here's how you can contribute:</p>
 
           <p>Donate a Device: If you possess a gently used laptop in good <br></br>condition, consider contributing it to our initiative.</p>
 
@@ -65,7 +63,7 @@ function AboutSec() {
            <p> Spread Awareness: Assist in spreading the word about our mission <br></br>and the significance of closing the digital gap for all.</p>
 
             <p>Together, we can build a world where everyone, regardless of<br></br> gender, has the technology needed to flourish.</p>
-                <button className='button'>View More</button>
+                <button className='button'><a href='/signup'>Join Us</a></button>
             </div>
         </div>
     </div>

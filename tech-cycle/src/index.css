@@ -61,7 +61,10 @@ img:hover{
 
 /* ----------------------------------hero section----------------------------- */
 .hero-sec{
-  background-color: var(--bg);  
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('./pages/images/heroimg5.png'), var(--bg); 
+  background: linear-gradient( to right, #FDFDFD  0 33%, rgba(0, 0, 0, 0.1) ), url('./pages/images/heroimg5.png');
+  background-position: center;
+  background-size: cover;
   height: 100vh;
   margin: 1rem 0 4rem 0;
 }
@@ -72,16 +75,19 @@ img:hover{
   align-items: center; 
 }
 .col1{
-  min-width: 320px;
+  /* min-width: 800px; */
   margin-top: 1rem;
-  margin-right: 2rem;
+  position: absolute;
+  color: #FDFDFD;
+  left: 4%;
+  bottom: 8%;
+  /* margin-right: 2rem; */
 }
 .col2{
   margin-top: 1rem;
   margin-left: 2rem;
-
-
 }
+
 .col1 h1, .donors h1{
   color: var(--light-sec-color);
   font-weight: 700;
@@ -578,6 +584,10 @@ margin-bottom: 6rem;
 }
 .about-section{
   text-align: center;
+}
+.about-section a{
+  text-decoration: none;
+  color: #FDFDFD
 }
 .about-row{
   display: flex;
