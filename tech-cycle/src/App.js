@@ -137,14 +137,14 @@ const submit =  (e) => {
       <Route path="/" element={<Landing/>} />
       <Route path="/signup" element={<Signupp/>} />
       <Route path="/login" element={<Loginpg/>} />  
-      <Route path="/reset" element={<Reset/>} />  
+      <Route path="/reset" element={<Reset/>} /> 
+      <Route path="/about" element={<About />} /> 
 
       
       <Route element={<Protected/>}>
       <Route path="/donate" element={<DonationPage handleLaptopName={handleLaptopName} handleLaptopSpecs={handleLaptopSpecs} handlePics={handlePics} devicename={laptopValue} devicespecs={specsValue} submitbtn={submit}/>} />
       <Route path="/gadgets" element={<Gadgetlist/>} />
       <Route path="/receiver" element={<Receiver />} />
-      <Route path="/about" element={<About />} />
       <Route path="/contact" element={<ContactUs />} />
       </Route> 
      </Routes>

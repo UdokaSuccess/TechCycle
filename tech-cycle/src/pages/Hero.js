@@ -10,7 +10,7 @@ function Hero() {
       <div className='col1'>
       <h1>JOIN THE TECH CYCLE <br></br>COMMUNITY:</h1>
       <p>Donate your old  laptops, <br></br>Recieve needed tech solutions</p>
-      <Link to='/donate'><button className='button'>Donate</button></Link>
+      <Link to='/donate'><button className='button'>Sign Up</button></Link>
 
       </div>
       <div className='col2'>

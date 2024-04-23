@@ -95,30 +95,33 @@ img:hover{
   color: var(--text);
   margin: 24px 8px;
 }
-#text::before { 
-  content: "Social Security"; 
-  animation: animate ease-in-out 5s infinite;
+#text::after{ 
+  content: "Social Security";
+  display: inline-block; 
+  animation: animate ease-in-out 6s infinite;
   color: var(--light-sec-color);
 } 
 
 @keyframes animate { 
   0% { 
-      content: "Social Security"; 
-  } 
+      content: "Social Security";
+      transform: translateY(8px);
+      transition: all 0.2s ease-in;
+      
+      } 
   50% { 
       content: "Better Digital Literacy"; 
-      transform: scale(1.1)
+      transform: translateY(-8px);
   } 
   100% { 
       content: "Increased Connectivity"; 
-      transform: translateX(-50px);
-  } 
+      transform: translateY(8px);
+   } 
 } 
 .cta-text{
   text-align: center;
   margin: 2rem;
   text-transform: uppercase;
-
 }
 .button{
   background-color: var(--light-sec-color);
@@ -650,7 +653,7 @@ font-weight: 600;
   border-radius: 12px;
 
 }
-/* ----------------------------reset password */
+/* ----------------------------reset password-------------------- */
 .reset-form{
   width: 70%;
   padding: 4rem;
@@ -801,7 +804,7 @@ width: 50%;
           /* ------------------device section------------------- */
           .dev-section{
             margin: 5.6rem 0;
-            text-align: center;
+            /* text-align: center; */
           }
           .device-img{
             width: 300px;
