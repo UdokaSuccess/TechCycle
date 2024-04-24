@@ -4,7 +4,7 @@ import { UserContext } from '../App';
 
   
  
-function LaptopItems() {  
+function LaptopItems({handleSearch}) {  
 const user = useContext(UserContext);
 
 const laptop = user.map(function(item){
@@ -27,10 +27,10 @@ const laptop = user.map(function(item){
           <div>
           <button className='filter-btn' disabled>Gadgets available</button>
           </div>
-          <div className='search'>
-          <input type='search' placeholder='Search for Gadgets'/>
-          <button className='search-btn'>Search</button>
-          </div>
+          <form className='search'>
+          <input type='search' placeholder='Search for Gadgets' onChange={handleSearch}/>
+          <button className='search-btn' onClick={handleSearch}>Search</button>
+          </form>
       </div>
       <div className='gadgets-row'>
         {laptop}

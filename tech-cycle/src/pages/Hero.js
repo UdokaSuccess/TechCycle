@@ -1,5 +1,5 @@
 import React from 'react'
-import heroimg from './images/heroimg5.png'
+// import heroimg from './images/heroimg.'
 import { Link } from 'react-router-dom'
 
 function Hero() {
@@ -9,11 +9,9 @@ function Hero() {
     <div className='row'>
       <div className='col1'>
       <h1>JOIN THE TECH CYCLE <br></br>COMMUNITY:</h1>
-      <p>Donate your old  laptops, <br></br>Recieve needed tech solutions</p>
-      <Link to='/about'><button className='button'>Learn More</button></Link>
+      <p>Donate Laptops, Inspire Innovation<br></br>Receive Laptops, Navigate Possibility</p>
+      <Link to='/donate'><button className='button'>Join Us</button></Link>
 
-      </div>
-      <div className='col2'>
       </div>
       </div>
       </div>

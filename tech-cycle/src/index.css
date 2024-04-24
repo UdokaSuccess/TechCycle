@@ -59,10 +59,10 @@ img:hover{
   display: none;
 }
 
-/* ----------------------------------hero section----------------------------- */
+/* ----------------------------------hero section-------------------------------------- */
 .hero-sec{
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('./pages/images/heroimg5.png'), var(--bg); 
-  background: linear-gradient( to right, #FDFDFD  0 33%, rgba(0, 0, 0, 0.1) ), url('./pages/images/heroimg5.png');
+  /* background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('./pages/images/heroimg5.png');  */
+  background: linear-gradient( to right, #fdfdfd  0 34%, rgba(0, 0, 0, 0.2) ), url('./pages/images/heroimg2.jpg');
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -75,13 +75,11 @@ img:hover{
   align-items: center; 
 }
 .col1{
-  /* min-width: 800px; */
   margin-top: 1rem;
   position: absolute;
   color: #FDFDFD;
   left: 4%;
   bottom: 8%;
-  /* margin-right: 2rem; */
 }
 .col2{
   margin-top: 1rem;
@@ -413,7 +411,7 @@ color: #FDFDFD;
  border-radius: 8px;
 }
 
-/* -----------------Gadget listing page--------------------------- */
+/* ------------------------------------------Gadget listing page------------------------------- */
 .gadgets-sec{
   margin: 3rem 0;
 }
@@ -571,16 +569,16 @@ margin-bottom: 6rem;
 /* ----------------------------------------------------------------About page---------------------------------------------- */
 .about-hero{
   height: 80vh;
-  background: url(./pages/images/about-bg.png);
+  background:  linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url(./pages/images/about-bg.png);
   background-position: center;
   background-size: cover;
   text-align: center;
   color: #FDFDFD;
   font-size: 1.7rem;
-  margin-bottom: 4.8rem;
+  margin-bottom: 2;
 }
 .about-text{
-  margin-top: 6.4rem;
+  margin-top: 4.8rem;
 }
 .about-section{
   text-align: center;
@@ -594,7 +592,7 @@ margin-bottom: 6rem;
   align-items: center;
   justify-content: center;
   text-align: justify;
-  margin: 1rem;
+  margin: 0;
   flex-flow: row wrap;
 }
 .abt-row{
@@ -661,7 +659,6 @@ font-weight: 600;
   background-color: var(--light-sec-color);
   color: #FDFDFD;
   border-radius: 12px;
-
 }
 /* ----------------------------reset password-------------------- */
 .reset-form{
@@ -671,7 +668,7 @@ font-weight: 600;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.1);
+  box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.1)
 }
 
 /* -----------------------------Contact Us page --------------------------------------- */
@@ -794,9 +791,13 @@ width: 50%;
             width: 2.4rem;
           }
 
-          /* ----------------------hero section---------------------- */
+          /* -----------------------------------------hero section----------------------------------------------------- */
           .hero-sec{
-            height: 120vh;
+            background: linear-gradient( to right, #f2fff4 0 90%, rgba(0, 0, 0, 0.2) ), url('./pages/images/heroimg2.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            margin: 0rem 0 4rem 0;
           }
           .hero-sec .row{
             justify-content: center;
@@ -811,6 +812,13 @@ width: 50%;
           .cta-text{
             margin: 2rem;
           }
+          .col1{
+            margin-top: 1rem;
+            position: absolute;
+            color: #FDFDFD;
+            left: 4%;
+            bottom: 5%;
+          }      
           /* ------------------device section------------------- */
           .dev-section{
             margin: 5.6rem 0;
@@ -1086,7 +1094,7 @@ width: 50%;
 
       }
 
-    /* ------------------------------Media queries for next screens---------------------------- */
+    /* ----------------------------------Media queries for next screens---------------------------- */
       @media screen and (min-width: 321px) and (max-width: 396px) {
         .navbar{
           justify-content: space-between;
@@ -1123,24 +1131,44 @@ width: 50%;
           width: 2.4rem;
         }
 
-/* --------------------------hero section---------------------- */
-        .hero-sec{
-          height: 100vh;
-        }
-        .hero-sec .row{
-          justify-content: center;
-          text-align: center;
-        }
-        .heroimg{
+/* --------------------------------------hero section--------------------------------------------- */
+.hero-sec{
+  background: linear-gradient( to right, #f2fff4 0 100%, rgba(0, 0, 0, 0.2) ), url('./pages/images/heroimg2.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0rem 0 4rem 0;
+}
+.hero-sec .row{
+  justify-content: center;
+  text-align: center;
+}
+.heroimg{
+  width: 300px;
+}
+.col1 h1, .donors h1{
+  font-size: 1.6rem;
+}
+.cta-text{
+  margin: 2rem;
+}
+.col1{
+  margin-top: 1rem;
+  position: absolute;
+  color: #FDFDFD;
+  left: 0;
+  bottom: 24%;
+}
+   .heroimg{
           width: 340px;
         }
-        .col1 h1, .donors h1{
+    .col1 h1, .donors h1{
           font-size: 1.6rem;
         }
-        .cta-text{
+    .cta-text{
           margin: 2rem;
         }
-/* ---------------------------device section------------------- */
+/* --------------------------------------device section------------------------------------ */
         .dev-section{
           margin: 5.6rem 0;
           text-align: center;
@@ -1474,6 +1502,42 @@ width: 50%;
         .cta-text{
           margin: 2rem;
         }
+        .hero-sec{
+          background: linear-gradient( to right, #f2fff4  0 100%, rgba(0, 0, 0, 0.2) ), url('./pages/images/heroimg2.jpg');
+          background-position: center;
+          background-size: cover;
+          height: 100vh;
+          margin: 0rem 0 4rem 0;
+        }
+        .hero-sec .row{
+          justify-content: center;
+          text-align: center;
+        }
+        .heroimg{
+          width: 300px;
+        }
+        .col1 h1, .donors h1{
+          font-size: 1.6rem;
+        }
+        .cta-text{
+          margin: 2rem;
+        }
+        .col1{
+          margin-top: 1rem;
+          position: absolute;
+          color: #FDFDFD;
+          left: 0;
+          bottom: 24%;
+        }
+           .heroimg{
+                  width: 340px;
+                }
+            .col1 h1, .donors h1{
+                  font-size: 1.6rem;
+                }
+            .cta-text{
+                  margin: 2rem;
+                }
         /* ------------------device section------------------- */
         .dev-section{
           margin: 5.6rem 0;

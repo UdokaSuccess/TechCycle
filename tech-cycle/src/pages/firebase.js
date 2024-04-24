@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider} from 'firebase/auth'
+import {getFirestore, collection, getDocs } from 'firebase/firestore'
 
 
 const firebaseConfig = {
@@ -16,3 +17,23 @@ const app = initializeApp(firebaseConfig);
 export const auth =  getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
 
+
+// Initialize firestore database
+const database = getFirestore()
+
+// our collection refernce to firestore
+export const donorCollections = collection(database, 'donors')
+// const receiveCollections = collection(database, 'receivers')
+
+
+
+// getCollection data
+// getDocs(donorCollections)
+// .then((snapshot) => {
+//   let donors = []
+//   snapshot.docs.forEach((doc) => {
+//     donors.push({...doc.data(), id: doc.id})
+//   })
+//   console.log(donors)
+// })
+// .catch(err => console.error(err))

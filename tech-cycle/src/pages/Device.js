@@ -26,7 +26,7 @@ function Device() {
 
       </div>
       <div>
-        <img src={img} width={460} className='device-img'/>
+        <img src={img} width={460} className='device-img' alt='device-img'/>
       </div>
       </div>
     </section>

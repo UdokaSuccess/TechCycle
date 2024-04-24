@@ -20,12 +20,12 @@ function AboutSec() {
                 <button className='button'>View More</button>
             </div>
             <div>
-                <img src={img} width={380}/>
+                <img src={img} width={380} alt='image-of-people-opeating-laptops'/>
             </div>
         </div>
         <div className='about-row'> 
         <div>
-            <img src={imgb} width={380}/>
+            <img src={imgb} width={380} alt='image-of-people-opeating-laptops'/>
             </div>
             <div>
                 <h3>Our Solution</h3>
@@ -44,12 +44,12 @@ function AboutSec() {
                 <button className='button'>View More</button>
             </div>
             <div>
-                <img src={imgc} width={380}/>
+                <img src={imgc} width={380} alt='image-of-people-opeating-laptops'/>
             </div>
             </div>
             <div className='about-row'> 
             <div className='about-col'>
-                <img src={imgd} width={380}/>
+                <img src={imgd} width={380} alt='image-of-people-opeating-laptops'/>
             </div>
             <div>
                 <h3>Join Us</h3>

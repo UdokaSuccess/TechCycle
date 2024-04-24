@@ -4,9 +4,6 @@ import Popup from './Popup'
 
 
 
-
-
-
 function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename, devicespecs, submit, popUp}) {
  
   return (

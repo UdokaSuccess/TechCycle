@@ -3,11 +3,11 @@ import Navbar from './Navbar'
 import LaptopItems from './pages/Gadgets'
 import Footer from './pages/Footer'
 
-function Gadgetlist({isLoggedIn}) {
+function Gadgetlist({handleSearch}) {
   return (
     <div>
-      <Navbar isLoggedIn={isLoggedIn}/>
-      <LaptopItems/>
+      <Navbar/>
+      <LaptopItems handleSearch={handleSearch}/>
       <Footer/>
     </div>
   )

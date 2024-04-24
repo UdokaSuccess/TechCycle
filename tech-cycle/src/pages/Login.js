@@ -45,7 +45,7 @@ function Login({handleLogin}) {
       <div className='signup-row'>
         <div className='signup-col'>
         <h2>Together we can Empower the tech community</h2>
-          <img src={img} width={240}/>
+          <img src={img} width={240} alt='login-img'/>
         </div>
         <div className='signup-col2'>
         <form className='login-form' onSubmit={login}>
