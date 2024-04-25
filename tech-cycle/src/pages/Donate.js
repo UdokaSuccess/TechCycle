@@ -10,9 +10,9 @@ function Donate() {
             <p>And become part of our wonderful community</p>
          <a href='#donate-form'><button className='button'>Donate</button></a>
             </div>
-         <div className='donor'>
+         {/* <div className='donor'>
         <img src={img} width={460}/>
-        </div>
+        </div> */}
         </div>
     </div>
   )

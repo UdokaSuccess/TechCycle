@@ -1,8 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { createContext } from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import {addDoc, getDocs} from 'firebase/firestore'
 import { donorCollections } from './pages/firebase'
+import { getDownloadURL, ref, uploadBytes } from 'firebase/storage'
+import { imgstorage } from './pages/firebase'
 import Reset from './pages/Reset';
 import Landing from "./pages/Landing";
 import DonationPage from "./pages/DonationPage";
@@ -14,7 +16,7 @@ import Signupp from "./Signup2";
 import ContactUs from "./ContactUs";
 import Protected from './pages/Protected';
 
-// ---------------to make context accessible across all pages--------------------
+// ---------------to make context accessible across all pages---------------------------------------
 export const UserContext = createContext()
 
 
@@ -34,61 +36,80 @@ function App() {
     const specs = e.target.value    
     setspecsValue(specs)
    }
+      // const random = Math.floor(Math.random() * 1000)
 
   const handlePics = (e) =>{
-    const imgurl = URL.createObjectURL(e.target.files[0])
-    // const imgurl = e.target
-    setpicsValue(imgurl); 
+    // const imgurl = URL.createObjectURL(e.target.files[0])
+    const imgfile = e.target.files[0]
+    // setpicsValue(imgurl);     
+    const images= ref(imgstorage, 'laptop-images')
+     uploadBytes(images, imgfile).then(data => {
+      getDownloadURL(data.ref, images).then(url =>{
+        console.log(url)
+        setpicsValue(url)
+      })
+          }) 
     }
+    
 
 //  --------------------get collection data from database-------------------------------
    const donors = []
-getDocs(donorCollections)
-.then((snapshot) => {
-  snapshot.docs.forEach((doc) => {
-    donors.push({...doc.data(), id: doc.id})
-  })
-  console.log(donors)
-})
-.catch(err => console.error(err))
+   const getData = async () =>{
+    let error = null
+     try{
+      const snapshot = await getDocs(donorCollections)
+       snapshot.docs.forEach((doc) => {  
+       donors.push({...doc.data(), id: doc.id})
+     })  
+         }
+       catch (err) {
+         console.error(error)
+       }
+   }
+   window.onload = getData()
 
 // ----------------manage state of donations--------------------------------------------
 const [donations, setdonations] = useState(donors)
 
- // ------------------------add data to database when a user fills a form----------------------------
-useEffect(() => {
-   addDoc(donorCollections, {
-    laptop: laptopValue,
-    image: picsValue,
-    specs: specsValue 
-  })
-}, [donations])
+console.log(donors)
+
+
 
 // -------------------------submit form function----------------------------------------
-
-const submit =  (e) => {
+  const submit = async (e) => {
   e.preventDefault()
+  try{
       const newDonation = 
     {
       // id: Math.floor(Math.random() * 1000),
-      name: laptopValue,
+      laptop: laptopValue,
       image: picsValue,
       specs: specsValue      
       }
      const donation =  [...donations, newDonation]
      setdonations(donation)
+ // ------------------------add data to database when a user submits the form----------------------------
+     await addDoc(donorCollections, {
+      laptop: laptopValue,
+      image: picsValue,
+      specs: specsValue})
+
      document.getElementsByClassName('donation-form')[0].reset()
      setlaptopValue('')
      setspecsValue('')
      document.getElementsByClassName('popup')[0].style.display = "block"
      document.getElementsByClassName('dim-pg')[0].style.display = "block"
-     console.log(donorCollections)
+  }
+     catch (err) {
+      console.error(err)
+    }
   }
 
   // -------------------Search Functionality-----------------------------------
   const [searchValue, setsearchValue] = useState('')
     const search = (e) => {  
       setsearchValue(e.target.value)
+      e.preventDefault()
       if(searchValue.trim().length > 0){
       const filterSearch = donations.filter((item) => (item.name.toLowerCase().includes(searchValue.toLowerCase()) || 
       item.specs.toLowerCase().includes(searchValue.toLowerCase())  ))

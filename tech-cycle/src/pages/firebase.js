@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider} from 'firebase/auth'
-import {getFirestore, collection, getDocs } from 'firebase/firestore'
+import {getFirestore, collection } from 'firebase/firestore'
+import {getStorage} from 'firebase/storage'
 
 
 const firebaseConfig = {
@@ -21,8 +22,11 @@ export const googleProvider = new GoogleAuthProvider();
 // Initialize firestore database
 const database = getFirestore()
 
+// Initialize storage
+export const imgstorage = getStorage()
+
 // our collection refernce to firestore
-export const donorCollections = collection(database, 'donors')
+export const donorCollections = collection(database, 'donate')
 // const receiveCollections = collection(database, 'receivers')
 
 

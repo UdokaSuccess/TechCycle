@@ -35,7 +35,6 @@ img:hover{
   border-color: gray;
   text-align: center;
   color: gray;
-
 }
 .navbar{
   display: flex;
@@ -62,7 +61,7 @@ img:hover{
 /* ----------------------------------hero section-------------------------------------- */
 .hero-sec{
   /* background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('./pages/images/heroimg5.png');  */
-  background: linear-gradient( to right, #fdfdfd  0 34%, rgba(0, 0, 0, 0.2) ), url('./pages/images/heroimg2.jpg');
+  background: linear-gradient( to right, #fdfdfd  0 26%, rgba(0, 0, 0, 0) ), url('./pages/images/heroimg2.jpg');
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -144,7 +143,7 @@ img:hover{
   transition: 0.2s ease-in-out;
 }
  
-/* ----------------------device section------------------------------------- */
+/* -------------------------------------------------device section------------------------------------- */
 .dev-section{
   margin: 6rem 1rem;
   }
@@ -163,7 +162,7 @@ h2{
   font-weight: 500;
 }
 
-/* ---------------mechanism section-------------------------------- */
+/* -----------------------------------------------------mechanism section-------------------------------- */
 .mech-section{
   text-align: center;
   /* background-color: var(--bg); */
@@ -285,13 +284,17 @@ h2{
 .donors{
   padding: 3rem 0;
   background-color: var(--bg);
-  margin-top: 1rem;
-}
+   margin-top: 1rem;
+  }
 .donate-row{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+  background: linear-gradient( to right, #fdfdfd  0 10%, rgba(0, 0, 0, 0.2) ), url('./pages/images/img5.png');
+  background-position: center;
+  background-size: cover; 
+  height: 100vh; 
 }
 .donor{
    z-index: 1;
@@ -414,6 +417,16 @@ color: #FDFDFD;
 /* ------------------------------------------Gadget listing page------------------------------- */
 .gadgets-sec{
   margin: 3rem 0;
+}
+.spec-span{
+  /* display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  */
+    /* width: 300px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; */
 }
 .card{
 flex-basis: 24%;
