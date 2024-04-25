@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import {useContext } from "react";
+import {useContext} from "react";
 import { UserContext } from '../App';
 
   
@@ -18,6 +18,7 @@ const laptop = user.map(function(item){
      </div>
   )
 })
+
 // ----------------------------------return of function component--------------------------------
     return (
       <section className='gadgets-sec'>

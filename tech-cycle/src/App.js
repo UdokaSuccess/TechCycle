@@ -15,6 +15,7 @@ import Loginpg from "./Loginpg"
 import Signupp from "./Signup2";
 import ContactUs from "./ContactUs";
 import Protected from './pages/Protected';
+import { v4 } from 'uuid'
 
 // ---------------to make context accessible across all pages---------------------------------------
 export const UserContext = createContext()
@@ -36,21 +37,18 @@ function App() {
     const specs = e.target.value    
     setspecsValue(specs)
    }
-      // const random = Math.floor(Math.random() * 1000)
 
   const handlePics = (e) =>{
     // const imgurl = URL.createObjectURL(e.target.files[0])
     const imgfile = e.target.files[0]
-    // setpicsValue(imgurl);     
-    const images= ref(imgstorage, 'laptop-images')
+    const images= ref(imgstorage, `images/${v4()}`)
      uploadBytes(images, imgfile).then(data => {
       getDownloadURL(data.ref, images).then(url =>{
-        console.log(url)
         setpicsValue(url)
       })
           }) 
     }
-    
+
 
 //  --------------------get collection data from database-------------------------------
    const donors = []
@@ -72,8 +70,6 @@ function App() {
 const [donations, setdonations] = useState(donors)
 
 console.log(donors)
-
-
 
 // -------------------------submit form function----------------------------------------
   const submit = async (e) => {
@@ -104,19 +100,19 @@ console.log(donors)
       console.error(err)
     }
   }
-
   // -------------------Search Functionality-----------------------------------
   const [searchValue, setsearchValue] = useState('')
     const search = (e) => {  
-      setsearchValue(e.target.value)
-      e.preventDefault()
-      if(searchValue.trim().length > 0){
-      const filterSearch = donations.filter((item) => (item.name.toLowerCase().includes(searchValue.toLowerCase()) || 
-      item.specs.toLowerCase().includes(searchValue.toLowerCase())  ))
-      setdonations(filterSearch)
-    }
-      }
- 
+      // e.preventDefault()
+      // const searchInput = e.target.value.toLowerCase();
+      // setsearchValue(e.target.value)
+
+      // if(searchValue.trim().length > 0){
+      // const filterSearch = donations.filter((item) => (item.name.toLowerCase().includes(searchInput()) || 
+      // item.specs.toLowerCase().includes(searchValue.toLowerCase())  ))
+      // setdonations(filterSearch)
+    //}
+  } 
    return (
     <UserContext.Provider value={donations}>
     <BrowserRouter>

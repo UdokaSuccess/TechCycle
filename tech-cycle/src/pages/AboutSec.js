@@ -63,7 +63,7 @@ function AboutSec() {
            <p> Spread Awareness: Assist in spreading the word about our mission <br></br>and the significance of closing the digital gap for all.</p>
 
             <p>Together, we can build a world where everyone, regardless of<br></br> gender, has the technology needed to flourish.</p>
-                <button className='button'><a href='/signup'>Join Us</a></button>
+                <button className='button'><a href='/donate'>Join Us</a></button>
             </div>
         </div>
     </div>
