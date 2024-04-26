@@ -4,8 +4,7 @@ import Popup from './Popup'
 
 
 
-function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename, devicespecs, submit, popUp}) {
- 
+function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename, devicespecs, submit}) { 
   return (
     <div className='donation' id='donate-form'>
           <div className='dim-pg'></div>
@@ -20,7 +19,7 @@ function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename
        <label>Upload a Photo of Your Laptop</label>
        <input type='file' required size={80} accept=".png, .jpg, .jpeg" onChange={handlePics}/>
         <label>Is your device working properly? 
-        <input type='radio' name='select' />yes <input type='radio' name='select'/>No
+        <input type='radio' name='select' required />yes <input type='radio' name='select'/>No
         </label>
        <label><input type='checkbox'/>I want to recieve updates on how my donation is transforming individuals.</label>
        <small>By ticking the box below, you agree to tech cycle's <a href='/contact'>term's of service</a> and <a href='#'>privacy policy</a></small>

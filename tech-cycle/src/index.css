@@ -85,7 +85,7 @@ img:hover{
   margin-left: 2rem;
 }
 
-.col1 h1, .donors h1{
+.col1 h1, .donors h2{
   color: var(--light-sec-color);
   font-weight: 700;
   font-size: 2.8rem;
@@ -99,26 +99,29 @@ img:hover{
   margin: 24px 8px;
 }
 #text::after{ 
-  content: "Social Security";
-  display: inline-block; 
-  animation: animate ease-in-out 3s infinite;
+  content: "Global Empowerment";
+  display: inline-block;
+  font-weight: 600; 
+  width: 440px;
+  animation: animate 5s ease 1s infinite;
   color: var(--light-sec-color);
+  
 } 
-
 @keyframes animate { 
   0% { 
-      content: "Social Security";
-      transform: translateY(2px);
-      /* transition: all 0.2s ease-in; */
-      
+      content: "Global Empowerment";
+      transform: translateY(0);
+      transform: translateY(-8px);     
       } 
   50% { 
       content: "Better Digital Literacy"; 
-      transform: translateY(2px);
+      transform: translateY(-8px); 
+      transform: translateY(0px); 
   } 
   100% { 
       content: "Increased Connectivity"; 
-      transform: translateY(2px);
+      transform: translateY(-8px);
+      transform: translateY(0);
    } 
 } 
 .cta-text{
@@ -197,7 +200,7 @@ h2{
 
 /* -----------------------------------------Apply as a recipient here---------------------------------- */
 .apply{
-  margin: 6rem 0;
+  margin: 6rem 4px;
   background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./pages/images/img4.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -291,11 +294,8 @@ h2{
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  background: linear-gradient( to right, #fdfdfd  0 10%, rgba(0, 0, 0, 0.2) ), url('./pages/images/img5.png');
-  background-position: center;
-  background-size: cover; 
-  height: 100vh; 
 }
+
 .donor{
    z-index: 1;
    margin: 0 auto;
@@ -418,7 +418,7 @@ color: #FDFDFD;
 .gadgets-sec{
   margin: 3rem 0;
 }
-.spec-span{
+/* .spec-span{ */
   /* display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  */
@@ -427,7 +427,7 @@ color: #FDFDFD;
     white-space: nowrap;
     overflow: hidden; 
     text-overflow: ellipsis; */
-}
+/* } */
 .card{
 flex-basis: 24%;
 padding:  1.4rem 1rem;
