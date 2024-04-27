@@ -3,7 +3,6 @@ import Popup from './Popup'
 
 
 
-
 function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename, devicespecs, submit}) { 
   return (
     <div className='donation' id='donate-form'>
