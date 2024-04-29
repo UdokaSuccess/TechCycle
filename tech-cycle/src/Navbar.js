@@ -15,7 +15,6 @@ function Navbar() {
     console.log('clicked')
     setShowNavbar(!showNavbar)
   }
-
   
   // To manage logged in state and corresponding UI elements
 

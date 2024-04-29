@@ -32,7 +32,7 @@ function Login({handleLogin}) {
         document.getElementById('error').innerHTML = "Invalid password/Email address"
       }
   }
-
+  
   const signInWithGoogle = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
