@@ -1,9 +1,8 @@
 import img from './images/img11.png'
-import {Link, useLocation} from 'react-router-dom'
+import {Link, useLocation, useNavigate} from 'react-router-dom'
 import { useState} from 'react'
 import { auth, googleProvider} from "./firebase"
 import { createUserWithEmailAndPassword, signInWithPopup} from "firebase/auth"
-
 
 
 function Signup() {
@@ -11,7 +10,7 @@ function Signup() {
   const [password, setPassword] = useState(""); 
   const [confirmpassword, setconfirmPassword] = useState(""); 
 
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
   const location = useLocation()
   const removefrom = location.state?.removefrom?.pathname || '/'
 
@@ -22,8 +21,8 @@ function Signup() {
     if (password == confirmpassword) {
     try{
  await createUserWithEmailAndPassword(auth, email, password);
-//  navigate(removefrom, {replace: true}) 
-window.location.assign(removefrom); 
+ navigate(removefrom, {replace: true}) 
+// window.location.assign(removefrom); 
  setEmail('')
  setPassword('')
 }
