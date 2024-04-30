@@ -100,18 +100,19 @@ console.log(donors)
       console.error(err)
     }
   }
-  // -------------------Search Functionality-----------------------------------
+
+  // --------------------------------Search Functionality----------------------------------------
   const [searchValue, setsearchValue] = useState('')
     const search = (e) => {  
-      // e.preventDefault()
-      // const searchInput = e.target.value.toLowerCase();
-      // setsearchValue(e.target.value)
+      e.preventDefault()
+    //   const searchInput = e.target.value.toLowerCase();
+    //   setsearchValue(e.target.value)
 
-      // if(searchValue.trim().length > 0){
-      // const filterSearch = donations.filter((item) => (item.name.toLowerCase().includes(searchInput()) || 
-      // item.specs.toLowerCase().includes(searchValue.toLowerCase())  ))
-      // setdonations(filterSearch)
-    //}
+    //   if(searchValue.trim().length > 0){
+    //   const filterSearch = donations.filter((item) => (item.name.toLowerCase().includes(searchInput) || 
+    //   item.specs.toLowerCase().includes(searchValue.toLowerCase())  ))
+    //   setdonations(filterSearch)
+    // }
   } 
    return (
     <UserContext.Provider value={donations}>
