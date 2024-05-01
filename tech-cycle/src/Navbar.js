@@ -16,6 +16,7 @@ function Navbar() {
     setShowNavbar(!showNavbar)
   }
   
+  
   // To manage logged in state and corresponding UI elements
 
   const [isLoggedIn, setisLoggedIn] = useState(false);

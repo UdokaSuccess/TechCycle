@@ -427,16 +427,21 @@ color: #FDFDFD;
 .gadgets-sec{
   margin: 3rem 0;
 }
-/* .spec-span{ */
-  /* display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  */
-    /* width: 300px;
+ .spec-span{ 
+   display: -webkit-box;
+   line-clamp: 2;
+     width: 300px;
     display: block;
     white-space: nowrap;
     overflow: hidden; 
-    text-overflow: ellipsis; */
-/* } */
+    text-overflow: ellipsis; 
+} 
+.spec-span:hover{
+  white-space: wrap;
+  overflow: visible;
+  text-overflow:clip;
+  display: block;
+}
 .card{
 flex-basis: 24%;
 padding:  1.4rem 1rem;
