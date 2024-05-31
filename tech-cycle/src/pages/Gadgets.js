@@ -37,7 +37,6 @@ const laptop = user.map(function(item){
       </section>
     )
   }
-
   
 
 export default LaptopItems;

@@ -16,6 +16,8 @@ function Device() {
           <li>Samsung</li>
           <li>Lenovo</li>
           <li>Dell</li>
+          <li>Others</li>
+
          </ul>
          <h3>Laptops Condition: </h3>
          <ul>

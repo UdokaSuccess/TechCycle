@@ -8,15 +8,15 @@ function ReceiverForm() {
         <form className='donation-form'>
             <div className='ReceiveInput'>
             <label for="fname">Full Name <span className='required'>*</span></label>
-            <input type='text' id='fname' required/>
+            <input type='text' id='fname' name='name'required/>
             </div>
             <div className='ReceiveInput'>
             <label for="email">Email Address <span className='required'>*</span></label>
-            <input type='email' id='email' required/>
+            <input type='email' id='email' name='email' required/>
             </div>
             <div className='ReceiveInput'>
-            <label for="contactInfo">Contact Information <span className='required'>*</span></label>
-            <input type='text' id='contactInfo' required/>
+            <label for="contactInfo">Phone number <span className='required'>*</span></label>
+            <input type='text' id='contactInfo' name='phone' required/>
             </div>
             <div className='ReceiveInput'>
             <label for="deliveryAddress">Delivery Address <span className='required'>*</span></label>
@@ -45,11 +45,6 @@ function ReceiverForm() {
             <h4>Purpose of Device <span className='required'>*</span></h4>
             <label for="deliveryAddress"> How do you intend using the donated laptop?</label>
             <textarea cols={10} rows={8}></textarea>
-            </div>
-            <div className='ReceiveInput'>
-            <h4>Verification <span className='required'>*</span></h4>
-            <label for="deliveryAddress">Upload proof of financial need</label>
-            <input type='file' required size={80}/>
             </div>
             <div className='ReceiveInput'>
             <label for="deliveryAddress">Upload a valid means of identication</label>
