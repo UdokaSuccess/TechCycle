@@ -52,7 +52,6 @@ function App() {
 
 
 //  --------------------get collection data from database-------------------------------
-useEffect(() => {
    const donors = []
    const getData = async () =>{
     let error = null
@@ -68,7 +67,7 @@ useEffect(() => {
    }
     //  window.onload = getData()
      getData()
-  }, [])
+
 
 
 // ----------------manage state of donations--------------------------------------------
