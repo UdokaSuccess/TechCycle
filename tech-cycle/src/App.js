@@ -65,8 +65,7 @@ function App() {
          console.error(error)
        }
    }
-    //  window.onload = getData()
-     getData()
+     window.onload = getData()
 
 
 
