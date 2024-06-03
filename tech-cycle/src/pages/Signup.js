@@ -39,6 +39,7 @@ else{
 const signUpWithGoogle = async () => {
   try {
     await signInWithPopup(auth, googleProvider);
+    navigate(removefrom, {replace: true}) 
   } catch (error) {
     console.error(error);
   }

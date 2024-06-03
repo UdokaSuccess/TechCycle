@@ -27,8 +27,7 @@ Tech Cycle website runs on Node Package Manager(NPM)
 
 **Backend API**
 
-There is no backend to this application. However if a user fills any form, the data is saved on the user's local storage.
-
+Firebase was utilized for authentication and firestore cloud was used as a database
 
 
 **Application Architecture**
