@@ -55,23 +55,23 @@ function App() {
 
    const donors = []
    const getData = async () =>{
-    let error = null
+    let error;
      try{
       const snapshot = await getDocs(donorCollections)
        snapshot.docs.forEach((doc) => {  
        donors.push({...doc.data(), id: doc.id})
      })  
-         }
+          }
        catch (err) {
          console.error(error)
        }
    }
 
-  useEffect(() => {
-     window.onload = getData()
-    })
-    
-   
+ useEffect(() => {
+   getData()
+ })
+ 
+  
 
 // ----------------manage state of donations--------------------------------------------
 const [donations, setdonations] = useState(donors)
