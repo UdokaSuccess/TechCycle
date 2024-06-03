@@ -52,6 +52,7 @@ function App() {
 
 
 //  --------------------get collection data from database-------------------------------
+useEffect(() => {
    const donors = []
    const getData = async () =>{
     let error = null
@@ -65,12 +66,15 @@ function App() {
          console.error(error)
        }
    }
-   window.onload = getData()
+   
+  //  window.onload = getData()
+  getData()
+  }, [])
+
 
 // ----------------manage state of donations--------------------------------------------
 const [donations, setdonations] = useState(donors)
 
-console.log(donors)
 
 // -------------------------submit form function----------------------------------------
   const submit = async (e) => {
