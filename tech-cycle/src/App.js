@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { createContext } from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import {addDoc, getDocs} from 'firebase/firestore'
@@ -66,9 +66,12 @@ function App() {
          console.error(error)
        }
    }
-     window.onload = getData()
-
+   
+    useEffect(() => {
+      getData()
+    }, [])
     
+   
 
 
 // ----------------manage state of donations--------------------------------------------
