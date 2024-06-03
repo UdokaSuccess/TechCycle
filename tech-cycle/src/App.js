@@ -66,13 +66,12 @@ function App() {
          console.error(error)
        }
    }
-   
-    useEffect(() => {
+
+  useEffect(() => {
       getData()
-    }, [])
+    })
     
    
-
 
 // ----------------manage state of donations--------------------------------------------
 const [donations, setdonations] = useState(donors)
