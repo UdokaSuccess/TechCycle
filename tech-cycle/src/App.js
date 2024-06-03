@@ -68,7 +68,7 @@ function App() {
    }
 
   useEffect(() => {
-      getData()
+     window.onload = getData()
     })
     
    
