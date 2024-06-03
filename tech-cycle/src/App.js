@@ -52,6 +52,7 @@ function App() {
 
 
 //  --------------------get collection data from database-------------------------------
+useEffect(() => {
    const donors = []
    const getData = async () =>{
     let error = null
@@ -66,6 +67,7 @@ function App() {
        }
    }
      window.onload = getData()
+  }, [])
 
 
 
