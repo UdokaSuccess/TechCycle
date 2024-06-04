@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { createContext } from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import {addDoc, getDocs, onSnapshot} from 'firebase/firestore'
+import {addDoc, getDocs} from 'firebase/firestore'
 import { donorCollections } from './pages/firebase'
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage'
 import { imgstorage } from './pages/firebase'
@@ -26,8 +26,6 @@ function App() {
   const [laptopValue, setlaptopValue]= useState('')
   const [specsValue, setspecsValue]= useState('')
   const [picsValue, setpicsValue]= useState('')
-  const [email, setEmail]= useState('')
-
  
 
 // -------------------To update details using typed response from donate page---------------------
@@ -40,11 +38,7 @@ function App() {
     const specs = e.target.value    
     setspecsValue(specs)
    }
-   
-   const handleEmail = (e) =>{
-    const emailtext = e.target.value    
-    setEmail(emailtext)
-   }
+
   const handlePics = (e) =>{
     // const imgurl = URL.createObjectURL(e.target.files[0])
     const imgfile = e.target.files[0]
@@ -56,11 +50,6 @@ function App() {
           }) 
     }
 
-  // ----------------manage state of donations--------------------------------------------
-  const donors = []
-const [donations, setdonations] = useState(donors)
-
-
 
 //  --------------------get collection data from database-------------------------------
 
@@ -70,16 +59,22 @@ const [donations, setdonations] = useState(donors)
       const snapshot = await getDocs(donorCollections)
        snapshot.docs.forEach((doc) => {  
        donors.push({...doc.data(), id: doc.id})
-          })  
-                  }
+     })  
+          }
        catch (err) {
          console.error(error)
        }
    }
 
-window.onload = getData()
-
+ useEffect(() => {
+   getData()
+ })
+ 
   
+
+// ----------------manage state of donations--------------------------------------------
+const [donations, setdonations] = useState(donors)
+
 
 // -------------------------submit form function----------------------------------------
   const submit = async (e) => {
@@ -87,7 +82,7 @@ window.onload = getData()
   try{
       const newDonation = 
     {
-      Email: email,
+      // id: Math.floor(Math.random() * 1000),
       laptop: laptopValue,
       image: picsValue,
       specs: specsValue      
@@ -96,11 +91,9 @@ window.onload = getData()
      setdonations(donation)
  // ------------------------add data to database when a user submits the form----------------------------
      await addDoc(donorCollections, {
-      Email: email,
       laptop: laptopValue,
       image: picsValue,
-      specs: specsValue
-    })
+      specs: specsValue})
 
      document.getElementsByClassName('donation-form')[0].reset()
      setlaptopValue('')
@@ -137,7 +130,7 @@ window.onload = getData()
       <Route path="/about" element={<About />} /> 
       
       <Route element={<Protected/>}>
-      <Route path="/donate" element={<DonationPage handleLaptopName={handleLaptopName} handleLaptopSpecs={handleLaptopSpecs} handlePics={handlePics} handleEmail={handleEmail}  devicename={laptopValue} devicespecs={specsValue} email={email} submitbtn={submit}/>} />
+      <Route path="/donate" element={<DonationPage handleLaptopName={handleLaptopName} handleLaptopSpecs={handleLaptopSpecs} handlePics={handlePics} devicename={laptopValue} devicespecs={specsValue} submitbtn={submit}/>} />
       <Route path="/gadgets" element={<Gadgetlist handleSearch={search}/>} />
       <Route path="/receiver" element={<Receiver />} />
       <Route path="/contact" element={<ContactUs />} />
