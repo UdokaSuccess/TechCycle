@@ -11,7 +11,7 @@ const laptop = user.map(function(item){
   // ------------------return of map function---------------------------
   return(
      <div className= "card" key={item.id}>
-      <img src={item.image} width={320} height={320} className="img" alt="laptops-to-be-requested"/>
+      <img src={item.image} width={320} className="img" alt="laptops-to-be-requested"/>
      <h3 className='name'>{item.laptop}</h3>
       <p><span className='spec-span'>Specification: {item.specs}</span></p>
       <Link to='/receiver'><button className='request-button'>Request</button></Link>
