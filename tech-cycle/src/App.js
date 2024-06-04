@@ -63,8 +63,8 @@ const [donations, setdonations] = useState(donors)
 
 
 //  --------------------get collection data from database-------------------------------
-  
-    const getData = async () =>{
+
+   const getData = async () =>{
     let error;
      try{
       const snapshot = await getDocs(donorCollections)
