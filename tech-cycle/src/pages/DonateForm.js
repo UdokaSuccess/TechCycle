@@ -3,7 +3,7 @@ import Popup from './Popup'
 
 
 
-function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, handleEmail, email, devicename, devicespecs, submit}) { 
+function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, devicename, devicespecs, submit}) { 
   return (
     <div className='donation' id='donate-form'>
           <div className='dim-pg'></div>
@@ -11,7 +11,7 @@ function DonateForm({handleLaptopName, handleLaptopSpecs, handlePics, handleEmai
     <small>Thank You for your interest in donating to tech cycle to help transform lives. Please complete the form below, our team will reach out to you with instructions on how to proceed with sending your donation</small>
     <form className="donation-form" onSubmit={submit}>
         <label>Full Name: <span className='required'>*</span></label> <input type='text' name='name'required/>
-        <label>Email Address:<span className='required'>*</span></label> <input type='email' name='email' required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" onChange={ handleEmail} value={email}/>
+        <label>Email Address:<span className='required'>*</span></label> <input type='email' name='email' required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"/>
         <label>Country <span className='required'>*</span></label> <input type='country' required/>
         <label>State <span className='required'>*</span></label> <input type='text' required/>
         <label>Address (or nearest landmark for pickup)<span className='required'>*</span></label> <input type='text' required/>

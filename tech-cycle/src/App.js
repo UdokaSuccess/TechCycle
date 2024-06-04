@@ -46,6 +46,7 @@ function App() {
      uploadBytes(images, imgfile).then(data => {
       getDownloadURL(data.ref, images).then(url =>{
         setpicsValue(url)
+        
       })
           }) 
     }
@@ -96,6 +97,7 @@ const [donations, setdonations] = useState(donors)
       specs: specsValue})
 
      document.getElementsByClassName('donation-form')[0].reset()
+     console.log(picsValue)
      setlaptopValue('')
      setspecsValue('')
      document.getElementsByClassName('popup')[0].style.display = "block"
