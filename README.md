@@ -4,15 +4,17 @@
 
 Tech Cycle is a website that sources gadgets from donors, refurbishes the laptops, and makes them available to recipients.
 
+
  
  ***Screenshots***
+ <img width="941" alt="Screenshot 2024-08-02 080623" src="https://github.com/user-attachments/assets/8e1519fa-4f17-45c0-9135-7ace801d6089">
 
 
 
 
  **Technologies**
 
- React.js, CSS, NPM, Jest, Git
+ React.js, CSS, NPM, Git
 
  React is a javscript library for building reusable UI components. It is a lightweight, and easily scalable library that helps achieve product requirements by providing a good UI architecture, page routing, and maintainable code.
 
@@ -124,12 +126,6 @@ React Routing: Easy Navigation of pages without reloading helps improve performa
 Image Optimisation: by minimizing images size, and using .png, .webp images.
 
 
-**Unit Testing**
-
-Testing basic functions in our code was done using react testing library, and *Jest* testing framework.
-
-
-
 **Version Control**
 
 
@@ -142,11 +138,12 @@ Product was deployed on vercel.
 
 
 **LightHouse Report**
-
+<img width="959" alt="Screenshot 2024-08-02 082420" src="https://github.com/user-attachments/assets/8aaf0262-39c0-41b9-ab63-ca1b7cecd046">
 
 
 
 **Conclusion**
+This project is open for collaboration. I will be releasing guidelines on how to collaborate on this project.
 
 
 
