@@ -138,7 +138,8 @@ Product was deployed on vercel.
 
 
 **LightHouse Report**
-<img width="959" alt="Screenshot 2024-08-02 082420" src="https://github.com/user-attachments/assets/8aaf0262-39c0-41b9-ab63-ca1b7cecd046">
+
+<img width="959" alt="Screenshot 2024-08-02 082420" src="https://github.com/user-attachments/assets/97a55c26-8ca6-4603-87e4-d9eeeeb865d0">
 
 
 
